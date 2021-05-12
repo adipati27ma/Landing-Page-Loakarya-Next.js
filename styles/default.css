@@ -1317,6 +1317,10 @@ header {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: header;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 header .logo-wrapper {

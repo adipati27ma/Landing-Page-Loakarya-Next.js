@@ -16,6 +16,11 @@ header {
   width: 100%;
   grid-area: header;
 
+  // fixed navbar
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
   .logo-wrapper {
     line-height: 70px;
     grid-area: logo;
