@@ -1,9 +1,9 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 // import './Footer.css';
 // import '../../assets/style.css';
 
-import Grid from "@material-ui/core/Grid";
+import Grid from '@material-ui/core/Grid';
 //import { faInstagram } from "@fortawesome/free-solid-svg-icons";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -37,10 +37,16 @@ const Footer = () => {
               <ul className="row text--center">
                 <div className="col-12">
                   <li>
-                    <Link href="/products">Produk Kami</Link>
+                    <Link href="/products">Produk</Link>
                   </li>
                   <li>
-                    <Link href="/about">Tentang Kami</Link>
+                    <Link href="/services">Layanan</Link>
+                  </li>
+                  <li>
+                    <Link href="/articles">Artikel</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">Tentang</Link>
                   </li>
                   <li>
                     <Link href="/faq">FAQ</Link>
@@ -96,7 +102,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </div>
-      <p className="text--center mb-4">Loakarya Indonesia &copy; 2020</p>
+      <p className="text--center mb-4">Loakarya Indonesia &copy; 2021</p>
     </footer>
   );
 };
