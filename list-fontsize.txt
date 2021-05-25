@@ -1,0 +1,13 @@
+---Berdasarkan Services Page--- :
+Header Awal (H1) = 72px atau 48px
+Header Section (H2) = 36px
+Header SubSection (H3) = 24px
+Paragraph (p) = 18px
+Button = 12px
+
+---Berdasarkan Home Page--- :
+Header Awal (H1) = 36px
+Header Section (H2) = 24px
+Header SubSection (H3) = 16px
+Paragraph (p) = 14px atau 12px
+Button = 12px atau 10px
