@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 function Header(props) {
   const [isHamburger, setHamburger] = useState(false);
@@ -13,7 +13,7 @@ function Header(props) {
       <div className="header-wrapper">
         <div className="logo-wrapper">
           <Link href="/">
-            <img src="/images/logo.png" alt="" />
+            <img src="/images/logo.png" alt="logo loakarya" />
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ function Header(props) {
         </div>
 
         <div
-          className={(isHamburger ? "mobile-menu-active" : "") + " mobile-menu"}
+          className={(isHamburger ? 'mobile-menu-active' : '') + ' mobile-menu'}
         >
           <ul>
             <li>

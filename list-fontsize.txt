@@ -1,3 +1,4 @@
+Font Dasar = 12px
 ---Berdasarkan Services Page--- :
 Header Awal (H1) = 72px atau 48px
 Header Section (H2) = 36px
