@@ -9,49 +9,63 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import HeroHome from '../components/HeroHome/HeroHome';
 
-import { Grid, Typography, Link as LinkText } from '@material-ui/core';
+import {
+  Grid,
+  Typography,
+  Link as LinkText,
+  ThemeProvider,
+  createMuiTheme,
+} from '@material-ui/core';
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: 'Montserrat, sans-serif',
+  },
+});
 
 export default function Home(props) {
   return (
-    <div id="main">
-      <Head>
-        <title>Loakarya Indonesia</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          property="og:description"
-          content="Produk furnitur ramah lingkungan dan layanan desain interior dengan konsep eco-living. Memenuhi kebutuhan anda dan juga melestarikan lingkungan."
-        />
-        <meta name="robots" content="index-follow" />
-        <link rel="canonical" href="https://loakarya.co" />
-        <meta
-          property="og:title"
-          content="Halaman Depan Situs Resmi Loakarya Indonesia"
-        />
-        <meta property="og:site_name" content="Loakarya Indonesia" />
-        <meta
-          property="og:image"
-          content="https://resources.loakarya.co/loakarya-og-image.jpg"
-        />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:url" content="https://loakarya.co" />
-        <meta property="og:type" content="website" />
-      </Head>
-      <HeaderBar />
-      <Header />
-      {/* <Header isLoggedIn={isLoggedIn} /> */}
-      <div
-        id="content"
-        className="overflow-x-hidden home-content"
-        style={{ paddingTop: 0 }}
-      >
-        <HeroHome />
-        <p>Home Content</p>
+    <ThemeProvider theme={theme}>
+      <div id="main">
+        <Head>
+          <title>Loakarya Indonesia</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="description"
+            property="og:description"
+            content="Produk furnitur ramah lingkungan dan layanan desain interior dengan konsep eco-living. Memenuhi kebutuhan anda dan juga melestarikan lingkungan."
+          />
+          <meta name="robots" content="index-follow" />
+          <link rel="canonical" href="https://loakarya.co" />
+          <meta
+            property="og:title"
+            content="Halaman Depan Situs Resmi Loakarya Indonesia"
+          />
+          <meta property="og:site_name" content="Loakarya Indonesia" />
+          <meta
+            property="og:image"
+            content="https://resources.loakarya.co/loakarya-og-image.jpg"
+          />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:url" content="https://loakarya.co" />
+          <meta property="og:type" content="website" />
+        </Head>
+        <HeaderBar />
+        <Header />
+        {/* <Header isLoggedIn={isLoggedIn} /> */}
+        <div
+          id="content"
+          className="overflow-x-hidden home-content"
+          style={{ paddingTop: 0 }}
+        >
+          <HeroHome />
+          <p>Home Content</p>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

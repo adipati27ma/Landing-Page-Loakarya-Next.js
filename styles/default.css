@@ -217,13 +217,26 @@ body {
   color: #ffffff;
 }
 
-.btn-can-hover-green {
+.button.MuiButton-root {
+  background-color: #45C875;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: none;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.btn-can-hover-green,
+.btn-can-hover-green.MuiButton-root {
   border: 1px solid transparent;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-.btn-can-hover-green:hover {
+.btn-can-hover-green:hover,
+.btn-can-hover-green.MuiButton-root:hover {
   color: #45C875;
   background-color: transparent;
   border: 1px solid #45C875;
@@ -231,13 +244,15 @@ body {
   transition: .2s;
 }
 
-.btn-can-hover-blue {
+.btn-can-hover-blue,
+.btn-can-hover-blue.MuiButton-root {
   border: 1px solid transparent;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-.btn-can-hover-blue:hover {
+.btn-can-hover-blue:hover,
+.btn-can-hover-blue.MuiButton-root:hover {
   color: #3e61dc;
   background-color: transparent;
   border: 1px solid #3e61dc;
@@ -1736,11 +1751,101 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .hero-home-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-image: url(/images/hero-homepage.png);
   background-size: cover;
-  padding: 5em 2em;
+  padding: 3em 0;
   margin-top: 0;
   font-family: "Montserrat", sans-serif;
+}
+
+.hero-home-container * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero-home-container .content-wrapper {
+  width: 90%;
+  padding-right: 3em;
+}
+
+.hero-home-container .content-wrapper .top-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8.5em;
+}
+
+.hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper {
+  list-style: none;
+}
+
+.hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li a {
+  color: #3e61dc;
+  font-weight: bold;
+}
+
+.hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li a:hover {
+  text-decoration: none;
+}
+
+.hero-home-container .content-wrapper .hero-content {
+  max-width: 55%;
+}
+
+.hero-home-container .content-wrapper .hero-content .hero-title {
+  color: #3e61dc;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.hero-home-container .content-wrapper .hero-content .hero-subtitle {
+  color: #666666;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
+
+.hero-home-container .content-wrapper .hero-content p {
+  color: #666666;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.hero-home-container .content-wrapper .hero-content .hero-button-wrapper {
+  margin-bottom: 3em;
+}
+
+.hero-home-container .content-wrapper .hero-content .hero-button-wrapper .button:nth-child(1) {
+  margin-right: 1em;
+}
+
+.hero-home-container .content-wrapper .hero-content a.link-hubungi-kami {
+  color: #45C875;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.hero-home-container .content-wrapper .hero-content a.link-hubungi-kami:hover {
+  text-decoration: none;
 }
 
 @media all and (min-width: 300px) and (max-width: 960px) {

@@ -11,4 +11,4 @@ Header Awal (H1) = 36px
 Header Section (H2) = 24px
 Header SubSection (H3) = 16px
 Paragraph (p) = 14px atau 12px
-Button = 12px atau 10px
+Button/Link = 14px atau 12px
