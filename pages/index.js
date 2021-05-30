@@ -8,9 +8,9 @@ import HeaderBar from '../components/HeaderBar/HeaderBar';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import HeroHome from '../components/HeroHome/HeroHome';
+import CoBussiness from '../components/CoBussiness/CoBussiness';
 
 import {
-  Grid,
   Typography,
   Link as LinkText,
   ThemeProvider,
@@ -61,7 +61,12 @@ export default function Home(props) {
           style={{ paddingTop: 0 }}
         >
           <HeroHome />
-          <p>Home Content</p>
+          <div className="content">
+            <CoBussiness />
+            <div className="block-show">
+              <img src="/images/Loakarya-png.png" alt="logo loakarya png" />
+            </div>
+          </div>
         </div>
         <Footer />
       </div>

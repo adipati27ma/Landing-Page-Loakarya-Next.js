@@ -375,8 +375,44 @@ hr.border {
           transform: translate(50%, 0%);
 }
 
-#content.home-content {
+#content.home-content * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#content.home-content .content {
   background-color: #EFF1F5;
+  margin-bottom: -60px;
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+
+#content.home-content .content .co-bussiness-container {
+  background-color: white;
+  width: 80%;
+  padding: 2em 1em;
+  margin: 2.5em auto 5.5em;
+  border-radius: 19px;
+}
+
+#content.home-content .content .co-bussiness-container .co-bussiness-item img {
+  width: 100%;
+}
+
+#content.home-content .content .block-show {
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  height: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product-container {
