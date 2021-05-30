@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 @import 'variables';
+@import './Button/Button';
 
 * {
   padding: 0;
@@ -354,10 +355,12 @@ hr.border {
   }
 }
 
+//* .font-color-primary digunakan di pages/about, articles, contact
 .font-color-primary {
   color: $dark-slate-blue;
 }
 
+//* .font-color-secondary digunakan di pages/about
 .font-color-secondary {
   color: $dark-grey-blue;
 }
@@ -429,5 +432,4 @@ hr.border {
 @import './PageHeader/PageHeader';
 @import './PortfolioModal/PortfolioModal';
 @import './HeroHome/HeroHome';
-@import './Button/Button';
 @import 'queries';
