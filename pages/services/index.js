@@ -10,6 +10,7 @@ import ReasonEffects from '../../components/Reason/ReasonEffects';
 import PortfolioCard from '../../components/PortfolioCard/PortfolioCard';
 import PortfolioModal from '../../components/PortfolioModal/PortfolioModal';
 import Footer from '../../components/Footer/Footer';
+import Button from '../../components/Button/Button';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -141,14 +142,19 @@ export default function Services() {
                     </span>
                   </Typography>
                   <div className="howto-button-wrapper">
-                    <a
+                    <Button
+                      text="Mulai Sekarang Juga!"
+                      classNames="btn-can-hover-green"
+                      link="https://form.typeform.com/to/c6DBijku"
+                    />
+                    {/* <a
                       target="blank"
                       href="https://form.typeform.com/to/c6DBijku"
                     >
                       <button className="btn btn-secondary btn-secondary--active btn-can-hover-green">
                         Mulai Sekarang Juga!
                       </button>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </Grid>

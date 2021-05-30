@@ -1017,12 +1017,7 @@ div.a-content {
 #content.services-content .services-section .howto-content .howto-button-wrapper {
   width: 100%;
   text-align: center;
-}
-
-#content.services-content .services-section .howto-content .howto-button-wrapper button {
-  font-weight: bold;
   margin-top: 5em;
-  padding: 1em 3em;
 }
 
 #content.services-content .services-section .why-content {
