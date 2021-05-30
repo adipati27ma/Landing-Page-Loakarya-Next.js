@@ -1971,44 +1971,6 @@ input[type=text]:focus, input[type=password]:focus {
     text-align: center;
     padding-bottom: 20px;
   }
-  section {
-    width: 90%;
-  }
-  section .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 2.5rem;
-  }
-  section .section-title::after {
-    padding-top: 10px;
-  }
-  section .home-gallery-container {
-    grid-gap: 20px;
-  }
-  section .home-gallery-container a:nth-child(1) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/span 12;
-  }
-  section .home-gallery-container a:nth-child(2) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/span 12;
-  }
-  section .home-gallery-container a:nth-child(3) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/span 12;
-  }
-  section .home-gallery-container a:nth-child(4) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/span 12;
-  }
-  section .home-gallery-container a:nth-child(5) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1/span 12;
-  }
   .xs-w-90 {
     width: 90%;
   }
