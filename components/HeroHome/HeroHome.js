@@ -9,8 +9,8 @@ import Button from '../Button/Button';
 export default function HeroHome() {
   return (
     <div className="hero-home-container">
-      <div class="content-wrapper">
-        <div class="top-wrapper">
+      <div className="content-wrapper">
+        <div className="top-wrapper">
           <div className="hero-logo-wrapper">
             <img src="/images/logo-home.png" alt="logo loakarya" />
           </div>
@@ -24,7 +24,7 @@ export default function HeroHome() {
           </ul>
         </div>
 
-        <div class="hero-content">
+        <div className="hero-content">
           <Typography align="left" variant="h1" className="hero-title">
             Zero Waste.
           </Typography>
@@ -49,13 +49,13 @@ export default function HeroHome() {
           <div className="hero-button-wrapper">
             <Button
               text="Beli produk"
-              className="btn-can-hover-green"
+              classNames="btn-can-hover-green"
               endIcon={<NextIcon />}
               link="https://www.google.com"
             />
             <Button
               text="Kreasikan ruanganmu"
-              className="btn-can-hover-green"
+              classNames="btn-can-hover-green"
               endIcon={<NextIcon />}
             />
           </div>

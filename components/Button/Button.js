@@ -1,21 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button as MuiButton, makeStyles } from '@material-ui/core';
-
-const useStyles = makeStyles((theme) => ({
-  buttonLink: {
-    textDecoration: 'none',
-  },
-}));
+import { Button as MuiButton } from '@material-ui/core';
 
 function BaseButton(props) {
-  const { text, endIcon, onClick, className } = props;
+  const { text, endIcon, onClick, classNames } = props;
 
   return (
     <MuiButton
       disableRipple
-      className={className}
+      className={classNames}
       endIcon={endIcon}
       onClick={onClick}
     >
@@ -25,17 +19,16 @@ function BaseButton(props) {
 }
 
 function Button(props) {
-  const classes = useStyles();
-  const { text, link, endIcon, onClick, className } = props;
+  const { text, link, endIcon, onClick, classNames } = props;
   const classArr = ['button'];
-  classArr.push(className);
+  classArr.push(classNames);
 
   if (link) {
     return (
-      <a target="blank" href={link} className={classes.buttonLink}>
+      <a target="blank" href={link} style={{ textDecoration: 'none' }}>
         <BaseButton
           text={text}
-          className={classArr.join(' ')}
+          classNames={classArr.join(' ')}
           endIcon={endIcon}
           onClick={onClick}
         />
@@ -46,7 +39,7 @@ function Button(props) {
   return (
     <BaseButton
       text={text}
-      className={classArr.join(' ')}
+      classNames={classArr.join(' ')}
       endIcon={endIcon}
       onClick={onClick}
     />
@@ -55,8 +48,8 @@ function Button(props) {
 
 Button.propTypes = {
   text: PropTypes.string,
-  className: PropTypes.string,
-  link: PropTypes.bool,
+  namaClass: PropTypes.string,
+  link: PropTypes.string,
   endIcon: PropTypes.object,
   onClick: PropTypes.func,
 };
