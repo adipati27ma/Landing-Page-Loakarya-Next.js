@@ -41,19 +41,24 @@ export default function Home(props) {
       <HeaderBar />
       <Header />
       {/* <Header isLoggedIn={isLoggedIn} /> */}
-      <div
+      <main
         id="content"
         className="overflow-x-hidden home-content"
         style={{ paddingTop: 0 }}
       >
         <HeroHome />
         <div className="content">
-          <CoBussiness />
-          <div className="block-show">
-            <img src="/images/Loakarya-png.png" alt="logo loakarya png" />
-          </div>
+          <section>
+            <CoBussiness />
+          </section>
+          <section>
+            <div className="block-show">
+              <img src="/images/Loakarya-png.png" alt="logo loakarya png" />
+            </div>
+          </section>
+          <section></section>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

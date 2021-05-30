@@ -10,34 +10,35 @@ function Header(props) {
 
   return (
     <header>
-      <div className="header-wrapper">
-        <div className="logo-wrapper">
-          <Link href="/">
-            <img src="/images/logo.png" alt="logo loakarya" />
-          </Link>
-        </div>
+      <nav>
+        <div className="header-wrapper">
+          <div className="logo-wrapper">
+            <Link href="/">
+              <img src="/images/logo.png" alt="logo loakarya" />
+            </Link>
+          </div>
 
-        <div className="web-menu">
-          <ul>
-            <li>
-              <Link href="/products">Produk</Link>
-            </li>
-            <li>
-              <Link href="/services">Layanan</Link>
-            </li>
-            <li>
-              <Link href="/articles">Artikel</Link>
-            </li>
-            <li>
-              <Link href="/about">Tentang Kami</Link>
-            </li>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-            <li>
-              <Link href="/contact">Hubungi Kami</Link>
-            </li>
-            {/* <li>
+          <div className="web-menu">
+            <ul>
+              <li>
+                <Link href="/products">Produk</Link>
+              </li>
+              <li>
+                <Link href="/services">Layanan</Link>
+              </li>
+              <li>
+                <Link href="/articles">Artikel</Link>
+              </li>
+              <li>
+                <Link href="/about">Tentang Kami</Link>
+              </li>
+              <li>
+                <Link href="/faq">FAQ</Link>
+              </li>
+              <li>
+                <Link href="/contact">Hubungi Kami</Link>
+              </li>
+              {/* <li>
               <Link href="#">
                 <IconButton>
                   <img
@@ -48,32 +49,34 @@ function Header(props) {
                 </IconButton>
               </Link>
             </li> */}
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-        <div
-          className={(isHamburger ? 'mobile-menu-active' : '') + ' mobile-menu'}
-        >
-          <ul>
-            <li>
-              <Link href="/products">Produk</Link>
-            </li>
-            <li>
-              <Link href="/services">Layanan</Link>
-            </li>
-            <li>
-              <Link href="/articles">Artikel</Link>
-            </li>
-            <li>
-              <Link href="/about">Tentang Kami</Link>
-            </li>
-            <li>
-              <Link href="/faq">FAQ</Link>
-            </li>
-            <li>
-              <Link href="/contact">Hubungi Kami</Link>
-            </li>
-            {/* <li>
+          <div
+            className={
+              (isHamburger ? 'mobile-menu-active' : '') + ' mobile-menu'
+            }
+          >
+            <ul>
+              <li>
+                <Link href="/products">Produk</Link>
+              </li>
+              <li>
+                <Link href="/services">Layanan</Link>
+              </li>
+              <li>
+                <Link href="/articles">Artikel</Link>
+              </li>
+              <li>
+                <Link href="/about">Tentang Kami</Link>
+              </li>
+              <li>
+                <Link href="/faq">FAQ</Link>
+              </li>
+              <li>
+                <Link href="/contact">Hubungi Kami</Link>
+              </li>
+              {/* <li>
               <Link href="#">
                 <IconButton>
                   <img
@@ -84,14 +87,15 @@ function Header(props) {
                 </IconButton>
               </Link>
             </li> */}
-          </ul>
+            </ul>
+          </div>
+          <div className="hamburger" onClick={() => openHamburger()}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-        <div className="hamburger" onClick={() => openHamburger()}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
+      </nav>
     </header>
   );
 }

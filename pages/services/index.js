@@ -102,7 +102,7 @@ export default function Services() {
         </Head>
         <HeaderBar />
         <Header />
-        <div id="content" className="services-content">
+        <main id="content" className="services-content">
           <PageHeader />
 
           <section className="services-section">
@@ -222,7 +222,7 @@ export default function Services() {
               </div>
             </div>
           </section>
-        </div>
+        </main>
         <Footer />
       </div>
       <AnimatePresence>
