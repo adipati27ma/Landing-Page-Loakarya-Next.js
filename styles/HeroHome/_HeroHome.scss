@@ -30,7 +30,6 @@
 
         li {
           display: inline-block;
-          margin-left: 2em;
 
           a {
             color: $dark-slate-blue;
@@ -40,6 +39,10 @@
               text-decoration: none;
             }
           }
+        }
+
+        li.spacing-item {
+          min-width: 2em;
         }
 
       }
@@ -60,6 +63,7 @@
         font-size: 1.2rem;
         margin-top: 3em;
         margin-bottom: 6em;
+        line-height: 25px;
       }
 
       p {

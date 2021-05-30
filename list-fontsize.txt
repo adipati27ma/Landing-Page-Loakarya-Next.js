@@ -8,7 +8,7 @@ Button = 12px
 
 ---Berdasarkan Home Page--- :
 Header Awal (H1) = 36px
-Header Section (H2) = 24px
+Header Section (H2) = 36px / 32px / 24px
 Header SubSection (H3) = 16px
 Paragraph (p) = 14px atau 12px
 Button/Link = 14px atau 12px

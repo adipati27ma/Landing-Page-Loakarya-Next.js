@@ -25,6 +25,7 @@ export default function HeroHome() {
               <li className="hero-menu-item">
                 <a href="#">Masuk</a>
               </li>
+              <li className="hero-menu-item spacing-item"></li>
               <li className="hero-menu-item">
                 <a href="#">Daftar</a>
               </li>
@@ -32,25 +33,15 @@ export default function HeroHome() {
           </div>
 
           <div className="hero-content">
-            <Typography align="left" variant="h1" className="hero-title">
-              Zero Waste.
-            </Typography>
-            <Typography align="left" variant="h1" className="hero-title">
-              Green Material.
-            </Typography>
-            <Typography align="left" variant="h1" className="hero-title">
-              Sustainable creation for you.
-            </Typography>
+            <h1 className="hero-title">Zero Waste.</h1>
+            <h1 className="hero-title">Green Material.</h1>
+            <h1 className="hero-title">Sustainable creation for you.</h1>
 
-            <Typography
-              align="left"
-              variant="subtitle1"
-              className="hero-subtitle"
-            >
+            <p className="hero-subtitle">
               Kurangi limbah. Kreasikan rumah. Furniture dan dekorasi yang
               membuat indah kediaman anda. Menggunakan material ramah lingkungan
               dan dengan proses yang menyenangkan.
-            </Typography>
+            </p>
 
             <p>Pesan dan bantu selamatkan lingkungan sekarang!</p>
             <div className="hero-button-wrapper">
@@ -64,6 +55,7 @@ export default function HeroHome() {
                 text="Kreasikan ruanganmu"
                 classNames="btn-can-hover-green"
                 endIcon={<NextIcon />}
+                link="https://www.facebook.com"
               />
             </div>
             <a href="#" className="link-hubungi-kami">

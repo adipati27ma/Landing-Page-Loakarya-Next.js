@@ -7,7 +7,20 @@
 // --------------------------------------------*/
 // @media all and (min-width: 1024px) and (max-width: 1280px) { }
 
-// @media all and (min-width: 768px) and (max-width: 1024px) { }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+  // For home page
+  // Hero
+  .hero-home-container {
+    .content-wrapper {
+      width: 95%;
+
+      .hero-content {
+        max-width: 80%;
+      }
+    }
+  }
+}
 
 @media all and (min-width: 300px) and (max-width: 960px) {
   .web-menu {
@@ -36,6 +49,36 @@
             width: 80%;
           }
         }
+      }
+    }
+  }
+
+  // For home page
+  // Hero
+  .hero-home-container {
+    // background-color: red;
+    justify-content: center;
+
+    .content-wrapper {
+      // background-color: lightcoral;
+      width: 80%;
+      padding-right: 0;
+
+      .top-wrapper {
+        // background-color: lightseagreen;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .hero-logo-wrapper {
+          margin-bottom: 1.5em;
+        }
+      }
+
+      .hero-content {
+        // background-color: lightseagreen;
+        max-width: 100%;
+        text-align: center;
       }
     }
   }
@@ -171,6 +214,28 @@
     }
   }
 
+  // For home page
+  // Hero
+  .hero-home-container {
+    justify-content: center;
+
+    .content-wrapper {
+      width: 90%;
+
+      .hero-content {
+        .hero-button-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .button:nth-child(1) {
+            margin-right: 0;
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 480px) {

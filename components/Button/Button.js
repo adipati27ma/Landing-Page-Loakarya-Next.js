@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button as MuiButton } from '@material-ui/core';
+// import Link from 'next/link';
+import { Button as MuiButton, Link } from '@material-ui/core';
 
 function BaseButton(props) {
   const { text, endIcon, onClick, classNames } = props;

@@ -1830,7 +1830,6 @@ input[type=text]:focus, input[type=password]:focus {
 
 .hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li {
   display: inline-block;
-  margin-left: 2em;
 }
 
 .hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li a {
@@ -1840,6 +1839,10 @@ input[type=text]:focus, input[type=password]:focus {
 
 .hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li a:hover {
   text-decoration: none;
+}
+
+.hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li.spacing-item {
+  min-width: 2em;
 }
 
 .hero-home-container .content-wrapper .hero-content {
@@ -1858,6 +1861,7 @@ input[type=text]:focus, input[type=password]:focus {
   font-size: 1.2rem;
   margin-top: 3em;
   margin-bottom: 6em;
+  line-height: 25px;
 }
 
 .hero-home-container .content-wrapper .hero-content p {
@@ -1885,6 +1889,15 @@ input[type=text]:focus, input[type=password]:focus {
   text-decoration: none;
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .hero-home-container .content-wrapper {
+    width: 95%;
+  }
+  .hero-home-container .content-wrapper .hero-content {
+    max-width: 80%;
+  }
+}
+
 @media all and (min-width: 300px) and (max-width: 960px) {
   .web-menu {
     display: none;
@@ -1900,6 +1913,34 @@ input[type=text]:focus, input[type=password]:focus {
   }
   #content.services-content .services-section .why-content .reason-effects .services-section-subtitle {
     width: 80%;
+  }
+  .hero-home-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-home-container .content-wrapper {
+    width: 80%;
+    padding-right: 0;
+  }
+  .hero-home-container .content-wrapper .top-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-home-container .content-wrapper .top-wrapper .hero-logo-wrapper {
+    margin-bottom: 1.5em;
+  }
+  .hero-home-container .content-wrapper .hero-content {
+    max-width: 100%;
+    text-align: center;
   }
 }
 
@@ -2004,6 +2045,30 @@ input[type=text]:focus, input[type=password]:focus {
   }
   #content.services-content .services-section .why-content .reason-effects .services-section-subtitle {
     width: 90%;
+  }
+  .hero-home-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-home-container .content-wrapper {
+    width: 90%;
+  }
+  .hero-home-container .content-wrapper .hero-content .hero-button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-home-container .content-wrapper .hero-content .hero-button-wrapper .button:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 1em;
   }
 }
 
