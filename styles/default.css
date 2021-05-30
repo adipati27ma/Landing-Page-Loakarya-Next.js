@@ -189,77 +189,6 @@ body {
   height: auto;
 }
 
-.btn {
-  background: none;
-  outline: none;
-  border: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-.btn-secondary {
-  padding: 10px 30px;
-  background: #efefef;
-  color: #3e61dc;
-  text-transform: uppercase;
-  font-size: 12px;
-  border-radius: 50px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.btn-secondary--active {
-  background: #45C875;
-  color: #ffffff;
-}
-
-.btn-secondary--active2 {
-  background: #3e61dc;
-  color: #ffffff;
-}
-
-.button.MuiButton-root {
-  background-color: #45C875;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: none;
-  padding-left: 3em;
-  padding-right: 3em;
-}
-
-.btn-can-hover-green,
-.btn-can-hover-green.MuiButton-root {
-  border: 1px solid transparent;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.btn-can-hover-green:hover,
-.btn-can-hover-green.MuiButton-root:hover {
-  color: #45C875;
-  background-color: transparent;
-  border: 1px solid #45C875;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.btn-can-hover-blue,
-.btn-can-hover-blue.MuiButton-root {
-  border: 1px solid transparent;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.btn-can-hover-blue:hover,
-.btn-can-hover-blue.MuiButton-root:hover {
-  color: #3e61dc;
-  background-color: transparent;
-  border: 1px solid #3e61dc;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
 .width--full {
   width: 100%;
 }
@@ -1846,6 +1775,77 @@ input[type=text]:focus, input[type=password]:focus {
 
 .hero-home-container .content-wrapper .hero-content a.link-hubungi-kami:hover {
   text-decoration: none;
+}
+
+.btn {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-secondary {
+  padding: 10px 30px;
+  background: #efefef;
+  color: #3e61dc;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.btn-secondary--active {
+  background: #45C875;
+  color: #ffffff;
+}
+
+.btn-secondary--active2 {
+  background: #3e61dc;
+  color: #ffffff;
+}
+
+.button.MuiButton-root {
+  background-color: #45C875;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: none;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.btn-can-hover-green,
+.btn-can-hover-green.MuiButton-root {
+  border: 1px solid transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-can-hover-green:hover,
+.btn-can-hover-green.MuiButton-root:hover {
+  color: #45C875;
+  background-color: transparent;
+  border: 1px solid #45C875;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-can-hover-blue,
+.btn-can-hover-blue.MuiButton-root {
+  border: 1px solid transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn-can-hover-blue:hover,
+.btn-can-hover-blue.MuiButton-root:hover {
+  color: #3e61dc;
+  background-color: transparent;
+  border: 1px solid #3e61dc;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 @media all and (min-width: 300px) and (max-width: 960px) {

@@ -184,71 +184,6 @@ body {
   height: auto;
 }
 
-//* BUTTON STYLING
-// old button
-.btn {
-  background: none;
-  outline: none;
-  border: none;
-  font-family: $font-style-1;
-}
-
-.btn-secondary {
-  padding: 10px 30px;
-  background: $white-two;
-  color: $dark-slate-blue;
-  text-transform: uppercase;
-  font-size: 12px;
-  border-radius: 50px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.btn-secondary--active {
-  background: $dark-grey-blue;
-  color: $white;
-}
-
-.btn-secondary--active2 {
-  background: $dark-slate-blue;
-  color: $white;
-}
-
-// new button
-.button.MuiButton-root {
-  background-color: $dark-grey-blue;
-  color: white;
-  font-family: $font-style-1;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: none;
-
-  padding-left: 3em;
-  padding-right: 3em;
-}
-
-@mixin btn-can-hover-base($color) {
-  border: 1px solid transparent;
-  transition: .2s;
-
-  &:hover {
-    color: $color;
-    background-color: transparent;
-    border: 1px solid $color;
-    transition: .2s;
-  }
-}
-
-.btn-can-hover-green,
-.btn-can-hover-green.MuiButton-root {
-  @include btn-can-hover-base($dark-grey-blue)
-}
-
-.btn-can-hover-blue,
-.btn-can-hover-blue.MuiButton-root {
-  @include btn-can-hover-base($dark-slate-blue)
-}
-
 .width--full {
   width: 100%;
 }
@@ -460,4 +395,5 @@ hr.border {
 @import './PageHeader/PageHeader';
 @import './PortfolioModal/PortfolioModal';
 @import './HeroHome/HeroHome';
+@import './Button/Button';
 @import 'queries';
