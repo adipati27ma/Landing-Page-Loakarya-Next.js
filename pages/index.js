@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import axios from 'axios';
 import Link from 'next/link';
+import { Grid } from '@material-ui/core';
 
 import HeaderBar from '../components/HeaderBar/HeaderBar';
 import Header from '../components/Header/Header';
@@ -56,7 +57,28 @@ export default function Home(props) {
               <img src="/images/Loakarya-png.png" alt="logo loakarya png" />
             </div>
           </section>
-          <section></section>
+          <section className="section-padding">
+            <div className="loakarya-in-numbers">
+              <h2>Loakarya dalam Angka</h2>
+              <p>
+                Sebagai perusahaan yang menyediakan kebutuhan rumah anda.
+                Loakarya berusaha agar dapat bermanfaat bagi masyarakat dan
+                alam. Dalam tiap proses yang kami jalani, mimpi kami adalah
+                memenuhi kebutuhan anda, melestarikan lingkungan, dan
+                menyejahterakan sosial.
+              </p>
+              <Grid container spacing={10} className="numbers-wrapper">
+                <Grid item className="number-item">
+                  <span>10.099</span>
+                  <p>produk dikembangkan oleh kami bersama mitra.</p>
+                </Grid>
+                <Grid item className="number-item">
+                  <span>10.099</span>
+                  <p>produk dikembangkan oleh kami bersama mitra.</p>
+                </Grid>
+              </Grid>
+            </div>
+          </section>
         </div>
       </main>
       <Footer />

@@ -453,6 +453,7 @@ hr.border {
 
 #content.home-content .content {
   background-color: #EFF1F5;
+  margin-top: -1px;
   margin-bottom: -60px;
   padding-top: 3em;
   padding-bottom: 4em;
@@ -484,6 +485,11 @@ hr.border {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#content.home-content .content section.section-padding {
+  width: 87%;
+  margin: auto;
 }
 
 .product-container {
@@ -1802,7 +1808,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .hero-home-container .content-wrapper {
-  width: 90%;
+  width: 93.5%;
   padding-right: 3em;
 }
 

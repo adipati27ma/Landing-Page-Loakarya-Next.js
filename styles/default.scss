@@ -381,6 +381,7 @@ hr.border {
 
   .content {
     background-color: #EFF1F5;
+    margin-top: -1px; // untuk menutup garis kecil putih setelah hero
     margin-bottom: -60px;
     padding-top: 3em;
     padding-bottom: 4em;
@@ -408,6 +409,13 @@ hr.border {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    // section padding :
+    // both-side = 87%, section one-side = 93.5%
+    section.section-padding {
+      width: 87%;
+      margin: auto;
     }
   }
 }
