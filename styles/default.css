@@ -446,6 +446,21 @@ hr.border {
           transform: translate(50%, 0%);
 }
 
+.section-padding-center {
+  width: 87%;
+  margin: auto;
+}
+
+.section-padding-left {
+  width: 93.5%;
+  margin-right: auto;
+}
+
+.section-padding-right {
+  width: 93.5%;
+  margin-left: auto;
+}
+
 #content.home-content * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -457,6 +472,19 @@ hr.border {
   margin-bottom: -60px;
   padding-top: 3em;
   padding-bottom: 4em;
+}
+
+#content.home-content .content h2.home-section-title {
+  color: #110A04;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#content.home-content .content p.home-section-paragraph {
+  color: #666666;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 #content.home-content .content .co-bussiness-container {
@@ -487,9 +515,43 @@ hr.border {
           align-items: center;
 }
 
-#content.home-content .content section.section-padding {
-  width: 87%;
-  margin: auto;
+#content.home-content .content .numbers-section {
+  position: relative;
+}
+
+#content.home-content .content .numbers-section img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+}
+
+#content.home-content .content .numbers-section .loakarya-in-numbers {
+  position: relative;
+  margin-top: 4.8em;
+}
+
+#content.home-content .content .numbers-section .loakarya-in-numbers h2 {
+  width: 270px;
+  margin-bottom: 2.65rem;
+}
+
+#content.home-content .content .numbers-section .loakarya-in-numbers > p {
+  width: 344px;
+  margin-bottom: 5em;
+}
+
+#content.home-content .content .numbers-section .loakarya-in-numbers .numbers-wrapper {
+  width: 95%;
+}
+
+#content.home-content .content .numbers-section .loakarya-in-numbers .numbers-wrapper .number-item span {
+  color: #3e61dc;
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-left: -11px;
+  padding-left: 11px;
+  border-left: 2px solid #45C875;
 }
 
 .product-container {

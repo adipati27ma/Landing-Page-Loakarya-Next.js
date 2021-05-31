@@ -11,6 +11,29 @@ import Footer from '../components/Footer/Footer';
 import HeroHome from '../components/HeroHome/HeroHome';
 import CoBussiness from '../components/CoBussiness/CoBussiness';
 
+const numbers = [
+  {
+    id: 1,
+    number: '10.099',
+    text: 'produk dikembangkan oleh kami bersama mitra.',
+  },
+  {
+    id: 2,
+    number: '10.099',
+    text: 'kilogram limbah terkelola dan terkurangi.',
+  },
+  {
+    id: 3,
+    number: '10.099',
+    text: 'masyarakat terberdayakan dengan program mitra kami.',
+  },
+  {
+    id: 4,
+    number: '90%',
+    text: 'penghematan energi rata-rata dalam pembuatan produk.',
+  },
+];
+
 export default function Home(props) {
   return (
     <div id="main">
@@ -57,25 +80,39 @@ export default function Home(props) {
               <img src="/images/Loakarya-png.png" alt="logo loakarya png" />
             </div>
           </section>
-          <section className="section-padding">
-            <div className="loakarya-in-numbers">
-              <h2>Loakarya dalam Angka</h2>
-              <p>
+          <section className="numbers-section">
+            <img
+              src="/images/peta-indonesia-high-vector.png"
+              alt="peta indonesia"
+            />
+            <div className="loakarya-in-numbers section-padding-center">
+              <h2 className="home-section-title">Loakarya dalam Angka</h2>
+              <p className="home-section-paragraph">
                 Sebagai perusahaan yang menyediakan kebutuhan rumah anda.
                 Loakarya berusaha agar dapat bermanfaat bagi masyarakat dan
                 alam. Dalam tiap proses yang kami jalani, mimpi kami adalah
                 memenuhi kebutuhan anda, melestarikan lingkungan, dan
                 menyejahterakan sosial.
               </p>
-              <Grid container spacing={10} className="numbers-wrapper">
-                <Grid item className="number-item">
-                  <span>10.099</span>
-                  <p>produk dikembangkan oleh kami bersama mitra.</p>
-                </Grid>
-                <Grid item className="number-item">
-                  <span>10.099</span>
-                  <p>produk dikembangkan oleh kami bersama mitra.</p>
-                </Grid>
+              <Grid
+                container
+                spacing={7}
+                justify="center"
+                className="numbers-wrapper"
+              >
+                {numbers.map((numberItem) => (
+                  <Grid
+                    key={numberItem.id}
+                    item
+                    lg={3}
+                    sm={6}
+                    xs={12}
+                    className="number-item"
+                  >
+                    <span>{numberItem.number}</span>
+                    <p className="home-section-paragraph">{numberItem.text}</p>
+                  </Grid>
+                ))}
               </Grid>
             </div>
           </section>

@@ -373,6 +373,37 @@ hr.border {
   transform: translate(50%, 0%);
 }
 
+//* section-padding class ready to use:
+// both-side = 87%, section one-side = 93.5%
+@mixin section-padding($content) {
+  @if $content=='center' {
+    width: 87%;
+    margin: auto;
+  }
+
+  @else if $content=='right' {
+    width: 93.5%;
+    margin-left: auto;
+  }
+
+  @else if $content=='left' {
+    width: 93.5%;
+    margin-right: auto;
+  }
+}
+
+.section-padding-center {
+  @include section-padding(center)
+}
+
+.section-padding-left {
+  @include section-padding(left)
+}
+
+.section-padding-right {
+  @include section-padding(right)
+}
+
 // -----HOME STYLING-----
 #content.home-content {
   * {
@@ -385,6 +416,19 @@ hr.border {
     margin-bottom: -60px;
     padding-top: 3em;
     padding-bottom: 4em;
+
+    h2.home-section-title {
+      color: $black-three;
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    p.home-section-paragraph {
+      color: $greyish-brown-four;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
 
     .co-bussiness-container {
       background-color: white;
@@ -411,11 +455,46 @@ hr.border {
       align-items: center;
     }
 
-    // section padding :
-    // both-side = 87%, section one-side = 93.5%
-    section.section-padding {
-      width: 87%;
-      margin: auto;
+    .numbers-section {
+      position: relative;
+
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 75%;
+      }
+
+      .loakarya-in-numbers {
+        position: relative; // untuk mensejajarkan dgn img
+        margin-top: 4.8em;
+
+        h2 {
+          width: 270px;
+          margin-bottom: 2.65rem;
+        }
+
+        >p {
+          width: 344px;
+          margin-bottom: 5em;
+        }
+
+        .numbers-wrapper {
+          width: 95%;
+
+          .number-item {
+            span {
+              color: $dark-slate-blue;
+              font-size: 2.6rem;
+              font-weight: bold;
+
+              margin-left: -11px;
+              padding-left: 11px;
+              border-left: 2px solid $dark-grey-blue;
+            }
+          }
+        }
+      }
     }
   }
 }
