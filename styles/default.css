@@ -520,7 +520,7 @@ hr.border {
   padding-top: 4.8em;
 }
 
-#content.home-content .content .numbers-section img {
+#content.home-content .content .numbers-section > img {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -552,6 +552,54 @@ hr.border {
   margin-left: -11px;
   padding-left: 11px;
   border-left: 2px solid #45C875;
+}
+
+#content.home-content .content .why-content-section {
+  position: relative;
+  margin-top: 1em;
+  padding-top: 15.6em;
+  background-color: white;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 148px);
+          clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 148px);
+}
+
+#content.home-content .content .why-content-section > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+}
+
+#content.home-content .content .why-content-section .why-content {
+  position: relative;
+}
+
+#content.home-content .content .why-content-section .why-content h2 {
+  margin-bottom: 2.65rem;
+}
+
+#content.home-content .content .why-content-section .why-content > p {
+  width: 406px;
+  margin-bottom: 3.5rem;
+}
+
+#content.home-content .content .why-content-section .why-content .advantages-wrapper {
+  width: 95%;
+}
+
+#content.home-content .content .why-content-section .why-content .advantages-wrapper .advantage-item h3 {
+  color: #110A04;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  margin-left: -13px;
+  padding-left: 11px;
+  border-left: 2px solid #45C875;
+}
+
+#content.home-content .content .testimoni-section {
+  margin-top: 8.5rem;
+  text-align: center;
 }
 
 .product-container {
@@ -1857,7 +1905,7 @@ input[type=text]:focus, input[type=password]:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-image: url(/images/hero-homepage.png);
+  background-image: url(/images/home-assets/hero-homepage.png);
   background-size: cover;
   padding: 3em 0;
   margin-top: 0;
@@ -1969,6 +2017,9 @@ input[type=text]:focus, input[type=password]:focus {
     display: block;
   }
   #content.home-content .content .numbers-section img {
+    width: 90%;
+  }
+  #content.home-content .content .why-content-section > img {
     width: 90%;
   }
 }
@@ -2101,6 +2152,9 @@ input[type=text]:focus, input[type=password]:focus {
   #content.home-content .content .numbers-section img {
     width: 100%;
   }
+  #content.home-content .content .why-content-section > img {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -2118,6 +2172,9 @@ input[type=text]:focus, input[type=password]:focus {
     width: auto;
   }
   #content.home-content .content .numbers-section .loakarya-in-numbers > p {
+    width: auto;
+  }
+  #content.home-content .content .why-content-section .why-content p {
     width: auto;
   }
 }

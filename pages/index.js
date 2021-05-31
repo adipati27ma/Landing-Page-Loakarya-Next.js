@@ -34,6 +34,33 @@ const numbers = [
   },
 ];
 
+const loakAdvantages = [
+  {
+    id: 1,
+    icon: '/images/icon/web-ramah-lingkungan.svg',
+    title: 'Produk ramah lingkungan',
+    text: 'produk dikembangkan oleh kami bersama mitra tiap bulan.',
+  },
+  {
+    id: 2,
+    icon: '/images/icon/web-kualitas.svg',
+    title: 'Kualitas material terjamin',
+    text: 'produk dikembangkan oleh kami bersama mitra tiap bulan.',
+  },
+  {
+    id: 3,
+    icon: '/images/icon/web-fitur-ekslusif.svg',
+    title: 'Fitur esklusif produk',
+    text: 'produk dikembangkan oleh kami bersama mitra tiap bulan.',
+  },
+  {
+    id: 4,
+    icon: '/images/icon/web-warranty.svg',
+    title: 'Garansi dan jaminan produk',
+    text: 'produk dikembangkan oleh kami bersama mitra tiap bulan.',
+  },
+];
+
 export default function Home(props) {
   return (
     <div id="main">
@@ -75,15 +102,17 @@ export default function Home(props) {
           <section>
             <CoBussiness />
           </section>
+
           <section>
             <div className="block-show">
               <img src="/images/Loakarya-png.png" alt="logo loakarya png" />
             </div>
           </section>
+
           <section className="numbers-section">
             <img
-              src="/images/peta-indonesia-high-vector.png"
-              alt="peta indonesia"
+              src="/images/home-assets/peta-indonesia-high-vector.png"
+              alt="Peta Indonesia"
             />
             <div className="loakarya-in-numbers section-padding-center">
               <h2 className="home-section-title">Loakarya dalam Angka</h2>
@@ -115,6 +144,48 @@ export default function Home(props) {
                 ))}
               </Grid>
             </div>
+          </section>
+
+          <section className="why-content-section">
+            <img src="/images/home-assets/mjt.png" alt="Meja Lokatable" />
+            <div className="why-content section-padding-center">
+              <h2 className="home-section-title">Mengapa Loakarya</h2>
+              <p className="home-section-paragraph">
+                Sebagai perusahaan yang menyediakan kebutuhan rumah anda.
+                Loakarya berusaha agar dapat bermanfaat bagi masyarakat dan
+                alam. Dalam tiap proses yang kami jalani, mimpi kami adalah
+                memenuhi kebutuhan anda, melestarikan lingkungan, dan
+                menyejahterakan sosial.
+              </p>
+              <Grid
+                container
+                spacing={6}
+                justify="center"
+                className="advantages-wrapper"
+              >
+                {loakAdvantages.map((advantagePoint) => (
+                  <Grid
+                    key={advantagePoint.id}
+                    item
+                    md={3}
+                    sm={6}
+                    xs={12}
+                    className="advantage-item"
+                    justify="flex-start"
+                  >
+                    <img src={advantagePoint.icon} alt={advantagePoint.title} />
+                    <h3 className="advantage-title">{advantagePoint.title}</h3>
+                    <p className="home-section-paragraph">
+                      {advantagePoint.text}
+                    </p>
+                  </Grid>
+                ))}
+              </Grid>
+            </div>
+          </section>
+
+          <section className="testimoni-section">
+            <h2 className="home-section-title">Ragam Kawan Kreasi</h2>
           </section>
         </div>
       </main>

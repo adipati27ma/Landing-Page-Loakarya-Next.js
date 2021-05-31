@@ -464,7 +464,7 @@ hr.border {
       // background-repeat: no-repeat;
       // background-attachment: fixed;
 
-      img {
+      >img {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -500,6 +500,56 @@ hr.border {
           }
         }
       }
+    }
+
+    .why-content-section {
+      position: relative;
+      margin-top: 1em;
+      padding-top: 15.6em;
+      background-color: white;
+      clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 148px);
+
+      >img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 65%;
+      }
+
+      .why-content {
+        position: relative; // untuk mensejajarkan dgn img
+
+        h2 {
+          margin-bottom: 2.65rem;
+        }
+
+        >p {
+          width: 406px;
+          margin-bottom: 3.5rem;
+        }
+
+        .advantages-wrapper {
+          width: 95%;
+
+          .advantage-item {
+            h3 {
+              color: $black-three;
+              font-size: 1rem;
+              font-weight: bold;
+
+              margin-bottom: 0.75rem;
+              margin-left: -13px;
+              padding-left: 11px;
+              border-left: 2px solid $dark-grey-blue;
+            }
+          }
+        }
+      }
+    }
+
+    .testimoni-section {
+      margin-top: 8.5rem;
+      text-align: center;
     }
   }
 }
