@@ -242,6 +242,23 @@
       }
     }
   }
+
+  // For home page
+  #content.home-content {
+    .content {
+      .numbers-section {
+        .loakarya-in-numbers {
+          h2 {
+            width: auto;
+          }
+
+          >p {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 // /*------------------------------------------

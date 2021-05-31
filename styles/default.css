@@ -2114,5 +2114,11 @@ input[type=text]:focus, input[type=password]:focus {
   #content.services-content .services-section.collaboration-section hr {
     width: 90%;
   }
+  #content.home-content .content .numbers-section .loakarya-in-numbers h2 {
+    width: auto;
+  }
+  #content.home-content .content .numbers-section .loakarya-in-numbers > p {
+    width: auto;
+  }
 }
 /*# sourceMappingURL=default.css.map */
