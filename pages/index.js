@@ -104,7 +104,7 @@ export default function Home(props) {
                   <Grid
                     key={numberItem.id}
                     item
-                    lg={3}
+                    md={3}
                     sm={6}
                     xs={12}
                     className="number-item"
