@@ -45,12 +45,12 @@ const testimonials = [
   },
 ];
 
-export default function TestimoniSlider() {
+export default function TestimonialSlider() {
   return (
     <div className="testimoni-slider-container">
       <Swiper
-        slidesPerView={4}
-        // spaceBetween={30}
+        slidesPerView={'auto'}
+        spaceBetween={30}
         centeredSlides={true}
         // freeMode={true}
         pagination={{

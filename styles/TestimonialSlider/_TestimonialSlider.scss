@@ -5,16 +5,14 @@
     overflow: visible !important;
 
     .swiper-slide {
-      margin-left: 1.6rem;
-      margin-right: 1.6rem;
-      overflow: visible;
       margin-bottom: 5.8em;
+      width: 338px !important;
 
       .testimoni-slider-item {
-        width: 338px;
         background-color: white;
         border-radius: 9px;
         box-shadow: -2px -2px 22px rgba(0, 0, 0, 0.16);
+
         position: relative;
 
         .customer-avatar {
