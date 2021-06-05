@@ -3,7 +3,9 @@ import Head from 'next/head';
 import React from 'react';
 import axios from 'axios';
 import Link from 'next/link';
+
 import { Grid } from '@material-ui/core';
+import NextIcon from '@material-ui/icons/NavigateNext';
 
 import HeaderBar from '../components/HeaderBar/HeaderBar';
 import Header from '../components/Header/Header';
@@ -11,6 +13,7 @@ import Footer from '../components/Footer/Footer';
 import HeroHome from '../components/HeroHome/HeroHome';
 import CoBussiness from '../components/CoBussiness/CoBussiness';
 import TestimonialSlider from '../components/TestimonialSlider/TestimonialSlider';
+import ArticleList from '../components/ArticleList/ArticleList';
 
 const numbers = [
   {
@@ -191,7 +194,18 @@ export default function Home(props) {
           </section>
 
           <section className="article-list-section">
-            <h2 className="home-section-title">Artikel Terbaru</h2>
+            <article className="section-padding-center">
+              <h2 className="home-section-title">Artikel Terbaru</h2>
+              <ArticleList />
+              <Link href="/articles">
+                <div className="see-more-articles">
+                  <div className="see-more-articles-link">
+                    <span>Lihat artikel lainnya</span>
+                    <NextIcon />
+                  </div>
+                </div>
+              </Link>
+            </article>
           </section>
         </div>
       </main>

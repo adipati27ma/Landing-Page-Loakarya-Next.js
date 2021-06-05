@@ -404,6 +404,12 @@ hr.border {
   @include section-padding(right)
 }
 
+@mixin left-green-border() {
+  margin-left: -13px;
+  padding-left: 11px;
+  border-left: 2px solid $dark-grey-blue;
+}
+
 // -----HOME STYLING-----
 #content.home-content {
   * {
@@ -493,9 +499,7 @@ hr.border {
               font-size: 2.6rem;
               font-weight: bold;
 
-              margin-left: -11px;
-              padding-left: 11px;
-              border-left: 2px solid $dark-grey-blue;
+              @include left-green-border()
             }
           }
         }
@@ -538,9 +542,7 @@ hr.border {
               font-weight: bold;
 
               margin-bottom: 0.75rem;
-              margin-left: -13px;
-              padding-left: 11px;
-              border-left: 2px solid $dark-grey-blue;
+              @include left-green-border()
             }
           }
         }
@@ -557,7 +559,40 @@ hr.border {
       }
     }
 
-    .article-list-section {}
+    .article-list-section {
+      background-color: white;
+      padding-top: 4.5rem;
+      padding-bottom: 1.25rem;
+      margin-bottom: 9.2rem;
+
+      h2 {
+        margin-bottom: 4.5rem;
+      }
+
+      .see-more-articles {
+        display: flex;
+        justify-content: center;
+        margin-top: 4em;
+        cursor: pointer;
+
+        color: $dark-slate-blue;
+        text-decoration: none;
+
+        .see-more-articles-link {
+          display: flex;
+          align-items: center;
+          border-bottom: 0.5px solid transparent;
+
+          span {
+            margin-right: 2px;
+          }
+
+          &:hover {
+            border-bottom: 1px solid $dark-slate-blue;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -582,4 +617,5 @@ hr.border {
 @import './PortfolioModal/PortfolioModal';
 @import './HeroHome/HeroHome';
 @import './TestimonialSlider/TestimonialSlider';
+@import './ArticleList/ArticleList';
 @import 'queries';

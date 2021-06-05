@@ -1,0 +1,40 @@
+.article-list-container {
+
+  .article-list-item {
+
+    img.article-image {
+      width: 100%;
+      border-radius: 9px;
+    }
+
+    .article-content {
+      color: $greyish-brown-four;
+      padding-top: 0.75em;
+
+      span.category {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .article-title {
+        color: $black-three;
+        font-size: 1.3rem;
+        margin-top: 0.75rem;
+        margin-bottom: 1rem;
+
+        @include left-green-border()
+      }
+
+      .article-text {
+        line-height: 1.5;
+        margin-bottom: 1em;
+      }
+
+      .writer-and-time {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
