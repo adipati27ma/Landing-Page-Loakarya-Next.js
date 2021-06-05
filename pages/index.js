@@ -66,6 +66,8 @@ const loakAdvantages = [
 ];
 
 export default function Home(props) {
+  const { profileProduct, profileArticles } = props;
+
   return (
     <div id="main">
       <Head>
@@ -170,6 +172,7 @@ export default function Home(props) {
                 {loakAdvantages.map((advantagePoint) => (
                   <Grid
                     key={advantagePoint.id}
+                    container
                     item
                     md={3}
                     sm={6}
@@ -196,7 +199,7 @@ export default function Home(props) {
           <section className="article-list-section">
             <article className="section-padding-center">
               <h2 className="home-section-title">Artikel Terbaru</h2>
-              <ArticleList />
+              <ArticleList profileArticles={profileArticles} />
               <Link href="/articles">
                 <div className="see-more-articles">
                   <div className="see-more-articles-link">
@@ -207,6 +210,8 @@ export default function Home(props) {
               </Link>
             </article>
           </section>
+
+          <div className="blue-border-home"></div>
         </div>
       </main>
       <Footer />

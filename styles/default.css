@@ -649,6 +649,14 @@ hr.border {
   border-bottom: 1px solid #3e61dc;
 }
 
+#content.home-content .content .blue-border-home {
+  background-color: #3e61dc;
+  width: 65%;
+  height: 3px;
+  margin: auto;
+  margin-bottom: 7.625rem;
+}
+
 .product-container {
   margin-top: 3rem;
   display: -ms-grid;
@@ -2117,9 +2125,24 @@ input[type=text]:focus, input[type=password]:focus {
   margin-bottom: .3rem;
 }
 
+.article-list-container .article-list-item:hover {
+  cursor: pointer;
+}
+
+.article-list-container .article-list-item:hover .article-title {
+  text-decoration: underline;
+}
+
+.article-list-container .article-list-item:hover img.article-image {
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+}
+
 .article-list-container .article-list-item img.article-image {
   width: 100%;
   border-radius: 9px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .article-list-container .article-list-item .article-content {
@@ -2143,8 +2166,18 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .article-list-container .article-list-item .article-content .article-text {
-  line-height: 1.5;
   margin-bottom: 1em;
+  /* Fallback for non-webkit */
+  display: block;
+  display: -webkit-box;
+  /* Fallback for non-webkit */
+  height: 4.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .article-list-container .article-list-item .article-content .writer-and-time span {
