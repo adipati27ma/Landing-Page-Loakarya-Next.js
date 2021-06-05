@@ -189,6 +189,10 @@ export default function Home(props) {
             <h2 className="home-section-title">Ragam Kawan Kreasi</h2>
             <TestimoniSlider />
           </section>
+
+          <section className="article-list-section">
+            <h2 className="home-section-title">Artikel Terbaru</h2>
+          </section>
         </div>
       </main>
       <Footer />
