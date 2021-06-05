@@ -10,6 +10,7 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import HeroHome from '../components/HeroHome/HeroHome';
 import CoBussiness from '../components/CoBussiness/CoBussiness';
+import TestimoniSlider from '../components/TestimoniSlider/TestimoniSlider';
 
 const numbers = [
   {
@@ -184,8 +185,9 @@ export default function Home(props) {
             </div>
           </section>
 
-          <section className="testimoni-section">
+          <section className="testimoni-slider-section">
             <h2 className="home-section-title">Ragam Kawan Kreasi</h2>
+            <TestimoniSlider />
           </section>
         </div>
       </main>

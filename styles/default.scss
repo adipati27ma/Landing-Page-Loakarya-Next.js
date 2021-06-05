@@ -413,7 +413,7 @@ hr.border {
   .content {
     background-color: #EFF1F5;
     margin-top: -1px; // untuk menutup garis kecil putih setelah hero
-    margin-bottom: -60px;
+    margin-bottom: -60px; // untuk menutupi space content w/ footer
     padding-top: 3em;
     padding-bottom: 4em;
 
@@ -547,9 +547,13 @@ hr.border {
       }
     }
 
-    .testimoni-section {
+    .testimoni-slider-section {
       margin-top: 8.5rem;
       text-align: center;
+
+      h2 {
+        margin-bottom: 2.58em;
+      }
     }
   }
 }
@@ -574,4 +578,5 @@ hr.border {
 @import './PageHeader/PageHeader';
 @import './PortfolioModal/PortfolioModal';
 @import './HeroHome/HeroHome';
+@import './TestimoniSlider/TestimoniSlider';
 @import 'queries';

@@ -1,0 +1,63 @@
+.testimoni-slider-container {
+  color: $greyish-brown-four;
+
+  .swiper-container {
+    overflow: visible !important;
+
+    .swiper-slide {
+      margin-left: 1.6rem;
+      margin-right: 1.6rem;
+      overflow: visible;
+
+      .testimoni-slider-item {
+        width: 338px;
+        background-color: white;
+        border-radius: 9px;
+        box-shadow: -2px -2px 22px rgba(0, 0, 0, 0.16);
+        position: relative;
+
+        .customer-avatar {
+          width: 92px;
+          height: 92px;
+          border-radius: 100%;
+          border: 1px solid #707070;
+          overflow: hidden;
+          margin: auto;
+
+          position: absolute;
+          top: -46px;
+          right: 0;
+          left: 0;
+
+          >img {
+            width: 100%;
+          }
+        }
+
+        .testimoni-content {
+          width: 78%;
+          margin: auto;
+          padding-top: 5.8em;
+          padding-bottom: 2.5em;
+
+          p.the-quote {
+            color: $dark-slate-blue;
+            font-size: 4.5rem;
+            font-style: italic;
+            font-weight: bold;
+          }
+
+          .customer-identity {
+            margin-top: 9.4em;
+
+            p.customer-name {
+              font-size: 1.3rem;
+              font-weight: bold;
+              margin-bottom: .3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
