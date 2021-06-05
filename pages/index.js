@@ -172,13 +172,11 @@ export default function Home(props) {
                 {loakAdvantages.map((advantagePoint) => (
                   <Grid
                     key={advantagePoint.id}
-                    container
                     item
                     md={3}
                     sm={6}
                     xs={12}
                     className="advantage-item"
-                    justify="flex-start"
                   >
                     <img src={advantagePoint.icon} alt={advantagePoint.title} />
                     <h3 className="advantage-title">{advantagePoint.title}</h3>
