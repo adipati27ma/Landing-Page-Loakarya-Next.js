@@ -282,6 +282,17 @@
   }
 }
 
+@media all and (max-width: 400px) {
+  .testimoni-slider-container {
+    .swiper-container {
+      .swiper-slide {
+        margin-bottom: 5em;
+        width: 300px !important;
+      }
+    }
+  }
+}
+
 // /*------------------------------------------
 //   Foundation Media Queries 
 //    http://foundation.zurb.com/docs/media-queries.html

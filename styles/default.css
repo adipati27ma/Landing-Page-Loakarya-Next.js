@@ -2013,6 +2013,14 @@ input[type=text]:focus, input[type=password]:focus {
   overflow: visible !important;
 }
 
+.testimoni-slider-container .swiper-container .swiper-pagination-bullet {
+  background-color: #6F7792;
+}
+
+.testimoni-slider-container .swiper-container .swiper-pagination-bullet-active {
+  background-color: #3e61dc;
+}
+
 .testimoni-slider-container .swiper-container .swiper-slide {
   margin-bottom: 5.8em;
   width: 338px !important;
@@ -2243,6 +2251,13 @@ input[type=text]:focus, input[type=password]:focus {
   }
   #content.home-content .content .why-content-section .why-content p {
     width: auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .testimoni-slider-container .swiper-container .swiper-slide {
+    margin-bottom: 5em;
+    width: 300px !important;
   }
 }
 /*# sourceMappingURL=default.css.map */

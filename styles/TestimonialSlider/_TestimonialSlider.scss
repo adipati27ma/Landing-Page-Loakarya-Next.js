@@ -4,6 +4,14 @@
   .swiper-container {
     overflow: visible !important;
 
+    .swiper-pagination-bullet {
+      background-color: #6F7792;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $dark-slate-blue;
+    }
+
     .swiper-slide {
       margin-bottom: 5.8em;
       width: 338px !important;

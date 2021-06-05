@@ -50,11 +50,16 @@ export default function TestimonialSlider() {
     <div className="testimoni-slider-container">
       <Swiper
         slidesPerView={'auto'}
-        spaceBetween={30}
+        spaceBetween={20}
         centeredSlides={true}
         // freeMode={true}
         pagination={{
           clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            spaceBetween: 30, // >640px value is 30
+          },
         }}
         className="mySwiper"
       >
