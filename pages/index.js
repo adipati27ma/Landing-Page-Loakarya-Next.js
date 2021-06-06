@@ -14,6 +14,7 @@ import HeroHome from '../components/HeroHome/HeroHome';
 import CoBussiness from '../components/CoBussiness/CoBussiness';
 import TestimonialSlider from '../components/TestimonialSlider/TestimonialSlider';
 import ArticleList from '../components/ArticleList/ArticleList';
+import Button from '../components/Button/Button';
 
 const numbers = [
   {
@@ -98,11 +99,7 @@ export default function Home(props) {
       <HeaderBar />
       <Header />
       {/* <Header isLoggedIn={isLoggedIn} /> */}
-      <main
-        id="content"
-        className="overflow-x-hidden home-content"
-        style={{ paddingTop: 0 }}
-      >
+      <main id="content" className="home-content" style={{ paddingTop: 0 }}>
         <HeroHome />
         <div className="content">
           <section>
@@ -210,9 +207,22 @@ export default function Home(props) {
           </section>
 
           <div className="blue-border-home"></div>
+
+          {/* <div className="mari-berkreasi-container">
+            <div className="mari-berkreasi">
+              <h2 className="home-section-title">Mari berkreasi untuk bumi</h2>
+              <p>Bergabunglah bersama kami menjadi kawan kreasi</p>
+              <Button
+                text="Daftar"
+                endIcon={<NextIcon />}
+                link="#"
+                classNames="btn-can-hover-green"
+              />
+            </div>
+          </div> */}
         </div>
       </main>
-      <Footer />
+      <Footer className="footer-home" homeFooter />
     </div>
   );
 }

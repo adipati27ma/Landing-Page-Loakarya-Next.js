@@ -110,6 +110,11 @@ body {
   grid-area: content;
   padding-top: 3rem;
   padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+footer.footer-home {
+  z-index: 0;
 }
 
 .overflow-x-hidden {
@@ -654,7 +659,24 @@ hr.border {
   width: 65%;
   height: 3px;
   margin: auto;
-  margin-bottom: 7.625rem;
+  margin-bottom: 20.625rem;
+}
+
+#content.home-content .content .mari-berkreasi-container .mari-berkreasi {
+  display: inline-block;
+  background-color: white;
+  border-radius: 9px;
+  margin: auto;
+  padding: 4.2em 8em;
+  text-align: center;
+}
+
+#content.home-content .content .mari-berkreasi-container .mari-berkreasi > h2 {
+  margin-bottom: 2rem;
+}
+
+#content.home-content .content .mari-berkreasi-container .mari-berkreasi > p {
+  margin-bottom: 5em;
 }
 
 .product-container {
@@ -1331,8 +1353,8 @@ div.a-content {
 }
 
 footer {
-  background: #414141;
-  color: #fff;
+  background: #110A04;
+  color: white;
   font-size: 12px;
   bottom: 0;
   width: 100%;
@@ -1353,27 +1375,41 @@ footer {
   display: flex;
 }
 
+.footer-side--two ul .menu-wrapper {
+  display: inline-block;
+  text-align: left;
+}
+
 .footer-side--two ul li a {
   text-decoration: none;
   color: inherit;
+  font-weight: bold;
 }
 
 .footer-side--two ul li a:hover {
   text-decoration: underline;
 }
 
-.footer-side--two ul li + li {
-  margin: 5px 0;
+.footer-side--two ul li {
+  margin: 0px;
 }
 
 .footer-side--three {
   text-align: center;
 }
 
+.footer-side--three .side-three-container {
+  display: inline-block;
+}
+
+.footer-side--three .side-three-container .footer-title {
+  text-align: left;
+}
+
 .footer-side .footer-title {
-  text-transform: uppercase;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
+  font-style: italic;
   padding-bottom: 16px;
 }
 
@@ -1400,8 +1436,9 @@ footer {
 }
 
 .footer-contact-container img.contact-icon {
-  height: 35px;
-  width: auto;
+  height: 20px;
+  width: 20px;
+  margin-right: 1em;
 }
 
 .header-wrapper {
@@ -2200,6 +2237,17 @@ input[type=text]:focus, input[type=password]:focus {
   .hamburger {
     display: block;
   }
+  .footer-wrapper {
+    text-align: center;
+  }
+  .footer-wrapper .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 2rem;
+  }
+  .footer-wrapper .footer-side--one > p {
+    display: block;
+    margin: auto;
+    width: 550px;
+  }
   #content.home-content .content .numbers-section img {
     width: 90%;
   }
@@ -2209,6 +2257,11 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 @media all and (min-width: 300px) and (max-width: 768px) {
+  .footer-wrapper .footer-side--one > p {
+    display: block;
+    margin: auto;
+    width: auto;
+  }
   #content.services-content .services-section .left-text-wrapper .MuiTypography-root.services-section-subtitle {
     text-align: center;
   }
@@ -2279,12 +2332,6 @@ input[type=text]:focus, input[type=password]:focus {
   }
   .xs-w-90 {
     width: 90%;
-  }
-  .footer-wrapper {
-    text-align: center;
-  }
-  .footer-wrapper .MuiGrid-spacing-xs-2 > .MuiGrid-item {
-    padding: 1.3rem;
   }
   .product-container {
     -ms-grid-columns: 1fr;

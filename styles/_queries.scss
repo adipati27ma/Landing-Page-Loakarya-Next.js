@@ -31,6 +31,23 @@
     display: block;
   }
 
+  .footer-wrapper {
+    text-align: center;
+
+    .MuiGrid-spacing-xs-2>.MuiGrid-item {
+      padding: 2rem;
+    }
+
+    .footer-side--one {
+
+      >p {
+        display: block;
+        margin: auto;
+        width: 550px;
+      }
+    }
+  }
+
   // For home page
   #content.home-content {
     .content {
@@ -50,6 +67,17 @@
 }
 
 @media all and (min-width: 300px) and (max-width: 768px) {
+
+  .footer-wrapper {
+    .footer-side--one {
+      >p {
+        display: block;
+        margin: auto;
+        width: auto;
+      }
+    }
+  }
+
 
   // For services page
   #content.services-content {
@@ -147,13 +175,13 @@
     width: 90%;
   }
 
-  .footer-wrapper {
-    text-align: center;
+  // .footer-wrapper {
+  //   text-align: center;
 
-    .MuiGrid-spacing-xs-2>.MuiGrid-item {
-      padding: 1.3rem;
-    }
-  }
+  //   .MuiGrid-spacing-xs-2>.MuiGrid-item {
+  //     padding: 1.3rem;
+  //   }
+  // }
 
   .product-container {
     grid-template-columns: 1fr;

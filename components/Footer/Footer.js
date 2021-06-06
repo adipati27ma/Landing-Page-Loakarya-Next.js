@@ -11,92 +11,93 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-wrapper">
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={4}>
+        <Grid container spacing={2} alignItems="flex-end">
+          <Grid item xs={12} md={4}>
             <div className="footer-side footer-side--one ">
               <div className="footer-title">
-                <img src="/images/logo.png" alt="Loakarya's Logo" />
+                <img src="/images/LogoLoakPutih.svg" alt="Loakarya's Logo" />
               </div>
               <p>
-                Loakarya menyediakan solusi mudah dengan pengalaman yang
-                menyenangkan untuk mengelola limbah anorganik yang anda punya
+                Solusi mudah dan menyenangkan untuk mengelola limbah anorganik
                 dengan metode <i>upcycling</i> dan <i>recycling</i> juga
-                mengedepankan konsep <i>eco smart-living</i>.
+                mengedepankan konsep
+                <i>eco smart-living</i>.
               </p>
               <br />
               <p>
-                Alamat: Jalan Raya Soreang - Banjaran No. 223 RT05/RW01 Ds.
-                Ciluncat, Kec. Cangkuang, Kab. Bandung, 40377
+                Alamat:&nbsp; Jalan Raya Soreang - Banjaran No. 223 RT05/RW01
+                Ds. Ciluncat, Kec. Cangkuang, Kab. Bandung, 40377
               </p>
             </div>
           </Grid>
 
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <div className="footer-side footer-side--two ">
-              <div className="footer-title text--center">Menu</div>
-              <ul className="row text--center">
+              <ul className="text--center">
                 <div className="col-12">
-                  <li>
-                    <Link href="/products">Produk</Link>
-                  </li>
-                  <li>
-                    <Link href="/services">Layanan</Link>
-                  </li>
-                  <li>
-                    <Link href="/articles">Artikel</Link>
-                  </li>
-                  <li>
-                    <Link href="/about">Tentang</Link>
-                  </li>
-                  <li>
-                    <Link href="/faq">FAQ</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Hubungi Kami</Link>
-                  </li>
+                  <div className="menu-wrapper">
+                    <li>
+                      <Link href="/products">Produk</Link>
+                    </li>
+                    <li>
+                      <Link href="/services">Layanan</Link>
+                    </li>
+                    <li>
+                      <Link href="/articles">Artikel</Link>
+                    </li>
+                    <li>
+                      <Link href="/about">Tentang</Link>
+                    </li>
+                    <li>
+                      <Link href="/faq">FAQ</Link>
+                    </li>
+                    <li>
+                      <Link href="/contact">Hubungi Kami</Link>
+                    </li>
+                  </div>
                 </div>
-                {/* <div className="col-6">
-                                    <li><a href="/">Link 5</a></li>
-                                    <li><a href="/">Link 6</a></li>
-                                    <li><a href="/">Link 7</a></li>
-                                </div> */}
               </ul>
             </div>
           </Grid>
 
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <div className="footer-side footer-side--three">
-              <div className="footer-title">Kontak</div>
-              <div className="footer-contact-container">
-                <a href="https://api.whatsapp.com/send?phone=6285759332633">
-                  <img
-                    className="contact-icon"
-                    src="/images/social-media/wa.png"
-                    alt="WhatsApp's Icon"
-                  />
-                </a>
-                <a href="https://www.facebook.com/Loakarya.co/">
-                  <img
-                    className="contact-icon"
-                    src="/images/social-media/facebook.png"
-                    alt="Facebook's Icon"
-                  />
-                </a>
-                <a href="https://www.instagram.com/loakarya/">
-                  <img
-                    className="contact-icon"
-                    src="/images/social-media/instagram.png"
-                    alt="Instagram's Icon"
-                  />
-                </a>
-                <a href="https://www.linkedin.com/company/53214780/">
-                  <img
-                    className="contact-icon"
-                    src="/images/social-media/linkedin.png"
-                    alt="LinkdIn's Icon"
-                  />
-                </a>
-                {/* <a href="#"><img className="contact-icon" src="../image/email.png"/></a> */}
+              <div className="side-three-container">
+                <div className="footer-title">
+                  #Kreasi
+                  <br />
+                  UntukBumi
+                </div>
+                <div className="footer-contact-container">
+                  <a href="https://api.whatsapp.com/send?phone=6285759332633">
+                    <img
+                      className="contact-icon"
+                      src="/images/social-media/wa.svg"
+                      alt="WhatsApp's Icon"
+                    />
+                  </a>
+                  <a href="https://www.facebook.com/Loakarya.co/">
+                    <img
+                      className="contact-icon"
+                      src="/images/social-media/facebook.svg"
+                      alt="Facebook's Icon"
+                    />
+                  </a>
+                  <a href="https://www.instagram.com/loakarya/">
+                    <img
+                      className="contact-icon"
+                      src="/images/social-media/instagram.svg"
+                      alt="Instagram's Icon"
+                    />
+                  </a>
+                  <a href="https://www.linkedin.com/company/53214780/">
+                    <img
+                      className="contact-icon"
+                      src="/images/social-media/linkedin.svg"
+                      alt="LinkdIn's Icon"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </Grid>
