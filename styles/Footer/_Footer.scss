@@ -91,3 +91,30 @@ footer {
     margin-right: 1em;
   }
 }
+
+
+// Styling for "Mari Berkreasi"'s Box
+.mari-berkreasi-container {
+  display: flex;
+  justify-content: center;
+
+  .mari-berkreasi {
+    background-color: white;
+    border-radius: 9px;
+    margin-top: -145px;
+    padding: 4.2em 8em;
+    text-align: center;
+
+    >h2 {
+      margin-bottom: 2rem;
+      color: $black-three;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    >p {
+      color: $black-three;
+      margin-bottom: 5em;
+    }
+  }
+}

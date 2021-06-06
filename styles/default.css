@@ -482,7 +482,7 @@ hr.border {
 #content.home-content .content h2.home-section-title {
   color: #110A04;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 #content.home-content .content p.home-section-paragraph {
@@ -660,23 +660,6 @@ hr.border {
   height: 3px;
   margin: auto;
   margin-bottom: 20.625rem;
-}
-
-#content.home-content .content .mari-berkreasi-container .mari-berkreasi {
-  display: inline-block;
-  background-color: white;
-  border-radius: 9px;
-  margin: auto;
-  padding: 4.2em 8em;
-  text-align: center;
-}
-
-#content.home-content .content .mari-berkreasi-container .mari-berkreasi > h2 {
-  margin-bottom: 2rem;
-}
-
-#content.home-content .content .mari-berkreasi-container .mari-berkreasi > p {
-  margin-bottom: 5em;
 }
 
 .product-container {
@@ -1439,6 +1422,35 @@ footer {
   height: 20px;
   width: 20px;
   margin-right: 1em;
+}
+
+.mari-berkreasi-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mari-berkreasi-container .mari-berkreasi {
+  background-color: white;
+  border-radius: 9px;
+  margin-top: -145px;
+  padding: 4.2em 8em;
+  text-align: center;
+}
+
+.mari-berkreasi-container .mari-berkreasi > h2 {
+  margin-bottom: 2rem;
+  color: #110A04;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.mari-berkreasi-container .mari-berkreasi > p {
+  color: #110A04;
+  margin-bottom: 5em;
 }
 
 .header-wrapper {
@@ -2261,6 +2273,12 @@ input[type=text]:focus, input[type=password]:focus {
     display: block;
     margin: auto;
     width: auto;
+  }
+  .mari-berkreasi-container {
+    margin: auto 1em;
+  }
+  .mari-berkreasi-container .mari-berkreasi {
+    padding: 3em 5em;
   }
   #content.services-content .services-section .left-text-wrapper .MuiTypography-root.services-section-subtitle {
     text-align: center;
