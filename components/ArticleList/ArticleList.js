@@ -3,21 +3,21 @@ import Link from 'next/link';
 import { Grid } from '@material-ui/core';
 
 export default function ArticleList({ profileArticles }) {
-  const [articleData, setArticleData] = useState();
-  const [tanggal, setTanggal] = useState();
-  const [bulan, setBulan] = useState();
-  const [tahun, setTahun] = useState();
+  // const [articleData, setArticleData] = useState();
+  // const [tanggal, setTanggal] = useState();
+  // const [bulan, setBulan] = useState();
+  // const [tahun, setTahun] = useState();
 
   return (
     <Grid container spacing={8} className="article-list-container">
       {profileArticles.slice(0, 3).map((article) => {
         // console.log(article);
 
-        fetch(`https://dev.api.loakarya.co/api/article/${article.slug}`)
-          .then((response) => response.json())
-          .then((response) => setArticleData(response));
+        // fetch(`https://dev.api.loakarya.co/api/article/${article.slug}`)
+        //   .then((response) => response.json())
+        //   .then((response) => setArticleData(response));
 
-        console.log(articleData);
+        // console.log(articleData);
 
         return (
           <Link href={`/article/${article.slug}`} key={article.id}>
