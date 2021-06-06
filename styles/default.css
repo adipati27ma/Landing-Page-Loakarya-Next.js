@@ -2348,9 +2348,6 @@ input[type=text]:focus, input[type=password]:focus {
     text-align: center;
     padding-bottom: 20px;
   }
-  .xs-w-90 {
-    width: 90%;
-  }
   .product-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
