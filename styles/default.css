@@ -2033,6 +2033,8 @@ header ul li a .MuiButtonBase-root img.search-icon {
 .hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li a {
   color: #3e61dc;
   font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .hero-home-container .content-wrapper .top-wrapper ul.menu-wrapper li a:hover {

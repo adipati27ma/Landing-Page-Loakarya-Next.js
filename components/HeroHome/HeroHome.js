@@ -26,15 +26,11 @@ export default function HeroHome(props) {
             </div>
             <ul className="menu-wrapper">
               <li className="hero-menu-item">
-                <a href="#" onClick={() => setLoginOpen(true)}>
-                  Masuk
-                </a>
+                <a onClick={() => setLoginOpen(true)}>Masuk</a>
               </li>
               <li className="hero-menu-item spacing-item"></li>
               <li className="hero-menu-item">
-                <a href="#" onClick={() => setRegistOpen(true)}>
-                  Daftar
-                </a>
+                <a onClick={() => setRegistOpen(true)}>Daftar</a>
               </li>
             </ul>
           </div>
