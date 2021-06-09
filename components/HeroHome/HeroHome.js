@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 import { Typography, ThemeProvider, createMuiTheme } from '@material-ui/core';
@@ -12,7 +13,9 @@ const theme = createMuiTheme({
   },
 });
 
-export default function HeroHome() {
+export default function HeroHome(props) {
+  const { setLoginOpen, setRegistOpen } = props;
+
   return (
     <ThemeProvider theme={theme}>
       <div className="hero-home-container">
@@ -23,11 +26,15 @@ export default function HeroHome() {
             </div>
             <ul className="menu-wrapper">
               <li className="hero-menu-item">
-                <a href="#">Masuk</a>
+                <a href="#" onClick={() => setLoginOpen(true)}>
+                  Masuk
+                </a>
               </li>
               <li className="hero-menu-item spacing-item"></li>
               <li className="hero-menu-item">
-                <a href="#">Daftar</a>
+                <a href="#" onClick={() => setRegistOpen(true)}>
+                  Daftar
+                </a>
               </li>
             </ul>
           </div>
@@ -58,12 +65,17 @@ export default function HeroHome() {
                 link="https://www.facebook.com"
               />
             </div>
-            <a href="#" className="link-hubungi-kami">
-              Hubungi Kami
-            </a>
+            <Link href="/contact">
+              <a className="link-hubungi-kami">Hubungi Kami</a>
+            </Link>
           </div>
         </div>
       </div>
     </ThemeProvider>
   );
 }
+
+HeroHome.propTypes = {
+  setLoginOpen: PropTypes.func,
+  setRegistOpen: PropTypes.func,
+};

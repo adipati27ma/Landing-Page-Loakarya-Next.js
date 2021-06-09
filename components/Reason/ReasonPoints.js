@@ -31,7 +31,7 @@ function ReasonPoints(props) {
 }
 
 ReasonPoints.propTypes = {
-  reasons: PropTypes.object,
+  reasons: PropTypes.array,
 };
 
 export default ReasonPoints;

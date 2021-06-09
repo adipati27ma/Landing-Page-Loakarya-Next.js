@@ -1,19 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Grid, Typography } from "@material-ui/core";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Grid, Typography } from '@material-ui/core';
 
 const portfolio1 =
-  "https://resources.loakarya.co/portfolio/icon/portfolio1.jpg";
+  'https://resources.loakarya.co/portfolio/icon/portfolio1.jpg';
 const portfolio2 =
-  "https://resources.loakarya.co/portfolio/icon/portfolio2.jpg";
+  'https://resources.loakarya.co/portfolio/icon/portfolio2.jpg';
 const portfolio3 =
-  "https://resources.loakarya.co/portfolio/icon/portfolio3.jpg";
+  'https://resources.loakarya.co/portfolio/icon/portfolio3.jpg';
 const portfolio4 =
-  "https://resources.loakarya.co/portfolio/icon/portfolio4.jpg";
+  'https://resources.loakarya.co/portfolio/icon/portfolio4.jpg';
 const portfolio5 =
-  "https://resources.loakarya.co/portfolio/icon/portfolio5.jpg";
+  'https://resources.loakarya.co/portfolio/icon/portfolio5.jpg';
 const portfolio6 =
-  "https://resources.loakarya.co/portfolio/icon/portfolio6.jpg";
+  'https://resources.loakarya.co/portfolio/icon/portfolio6.jpg';
 
 function PortfolioCard(props) {
   const { cardText, setSelectedImg, setIsOpen } = props;
@@ -61,7 +61,7 @@ function PortfolioCard(props) {
 }
 
 PortfolioCard.propTypes = {
-  cardText: PropTypes.array,
+  cardText: PropTypes.object,
   setSelectedImg: PropTypes.func,
   setIsOpen: PropTypes.func,
 };

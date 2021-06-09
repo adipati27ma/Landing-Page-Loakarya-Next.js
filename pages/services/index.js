@@ -117,7 +117,7 @@ export default function Services() {
               spacing={3}
               justify="center"
               className="howto-content"
-              direction={isMediumDevice && 'column-reverse'}
+              direction={(isMediumDevice && 'column-reverse') || 'row'}
             >
               <Grid
                 container
