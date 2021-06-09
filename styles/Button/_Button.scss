@@ -30,7 +30,6 @@
 
 // new button
 .button.MuiButton-root {
-  background-color: $dark-grey-blue;
   color: white;
   font-family: $font-style-1;
   font-size: 1rem;
@@ -42,6 +41,7 @@
 }
 
 @mixin btn-can-hover-base($color) {
+  background-color: $color;
   border: 1px solid transparent;
   transition: .2s;
 
@@ -61,4 +61,8 @@
 .btn-can-hover-blue,
 .btn-can-hover-blue.MuiButton-root {
   @include btn-can-hover-base($dark-slate-blue)
+}
+
+.button.MuiButton-root.block-button {
+  width: 100%;
 }

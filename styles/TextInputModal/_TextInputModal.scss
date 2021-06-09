@@ -1,0 +1,26 @@
+.text-input-modal-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.6rem;
+
+  label {
+    color: $greyish-brown-four;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  input {
+    width: 300px;
+    margin-top: .85rem;
+    border: 1px solid $black-three;
+    padding: .45em .5em;
+
+    font-family: $font-style-1;
+    font-size: 1rem;
+    // color: $greyish-brown-four;
+    color: $dark-slate-blue;
+    line-height: 1.5;
+  }
+}

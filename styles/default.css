@@ -31,7 +31,6 @@
 }
 
 .button.MuiButton-root {
-  background-color: #45C875;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -43,6 +42,7 @@
 
 .btn-can-hover-green,
 .btn-can-hover-green.MuiButton-root {
+  background-color: #45C875;
   border: 1px solid transparent;
   -webkit-transition: .2s;
   transition: .2s;
@@ -59,6 +59,7 @@
 
 .btn-can-hover-blue,
 .btn-can-hover-blue.MuiButton-root {
+  background-color: #3e61dc;
   border: 1px solid transparent;
   -webkit-transition: .2s;
   transition: .2s;
@@ -71,6 +72,10 @@
   border: 1px solid #3e61dc;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+.button.MuiButton-root.block-button {
+  width: 100%;
 }
 
 * {
@@ -1631,28 +1636,6 @@ header ul li a .MuiButtonBase-root img.search-icon {
   grid-area: bar;
 }
 
-.form-group + .form-group {
-  margin: 1rem 0px;
-}
-
-input[type=text], input[type=password] {
-  width: calc(100% - 20px);
-  font-family: "Montserrat", sans-serif;
-  height: 42px;
-  padding: 0 10px;
-  border: none;
-  background: rgba(246, 241, 241, 0.69);
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  outline: none;
-  background: #ffffff;
-  color: #3e61dc;
-  width: calc(100% - 22px);
-  border: 1px solid #828282;
-  height: 40px;
-}
-
 .image-container {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -2239,8 +2222,114 @@ input[type=text]:focus, input[type=password]:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(112, 112, 112, 0.37);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-modal-backdrop .modal-content {
+  background-color: white;
+  border-radius: 7px;
+  padding: 62px 5rem 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.login-modal-backdrop .modal-content .close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 12px;
+  margin-right: 19px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.login-modal-backdrop .modal-content .close-icon:hover {
+  color: red;
+}
+
+.login-modal-backdrop .modal-content h4 {
+  margin-bottom: 1.5rem;
+  color: #110A04;
+  font-size: 1.33rem;
+  font-weight: 600;
+}
+
+.login-modal-backdrop .modal-content span.or-word {
+  display: block;
+  color: #666666;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.916rem;
+  margin-bottom: 0.916em;
+}
+
+.login-modal-backdrop .modal-content .signin-with-google-button {
+  width: 192px;
+  margin-bottom: 33.6px;
+  cursor: pointer;
+}
+
+.login-modal-backdrop .modal-content .signin-with-google-button:hover {
+  -webkit-filter: opacity(0.85);
+          filter: opacity(0.85);
+}
+
+.login-modal-backdrop .modal-content p {
+  display: block;
+}
+
+.login-modal-backdrop .modal-content p a.link-register {
+  color: #45C875;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-modal-backdrop .modal-content p a.link-register:hover {
+  text-decoration: underline;
+}
+
+.text-input-modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2.6rem;
+}
+
+.text-input-modal-container label {
+  color: #666666;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.text-input-modal-container input {
+  width: 300px;
+  margin-top: .85rem;
+  border: 1px solid #110A04;
+  padding: .45em .5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #3e61dc;
+  line-height: 1.5;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
