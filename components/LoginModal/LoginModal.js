@@ -28,8 +28,13 @@ export default function LoginModal(props) {
         /> */}
         <h4>Masuk</h4>
         <form>
-          <TextInputModal label="Email" name="email" required />
-          <TextInputModal label="Kata Sandi" name="password" required />
+          <TextInputModal type="email" label="Email" name="email" required />
+          <TextInputModal
+            type="password"
+            label="Kata Sandi"
+            name="password"
+            required
+          />
           <Button text="Masuk" classNames="btn-can-hover-blue block-button" />
           <span className="or-word">atau</span>
           <img

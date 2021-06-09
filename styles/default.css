@@ -2329,9 +2329,13 @@ header ul li a .MuiButtonBase-root img.search-icon {
   border: 1px solid #110A04;
   padding: .45em .5em;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #3e61dc;
   line-height: 1.5;
+}
+
+.text-input-modal-container input.password-input {
+  font-weight: bold;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {

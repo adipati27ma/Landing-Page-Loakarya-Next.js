@@ -18,9 +18,13 @@
     padding: .45em .5em;
 
     font-family: $font-style-1;
-    font-size: 1rem;
+    font-size: 1.25rem;
     // color: $greyish-brown-four;
     color: $dark-slate-blue;
     line-height: 1.5;
+
+    &.password-input {
+      font-weight: bold;
+    }
   }
 }

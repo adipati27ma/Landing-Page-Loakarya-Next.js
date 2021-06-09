@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function TextInputModal(props) {
-  const { label, name, required } = props;
+  const { type, label, name, required, classNames } = props;
+  const classArr = ['text-input'];
+
+  type === 'password' && classArr.push('password-input');
+  classArr.push(classNames);
 
   return (
     <div className="text-input-modal-container">
@@ -11,10 +15,10 @@ export default function TextInputModal(props) {
       </label>
       <input
         required={required}
-        type="text"
+        type={type}
         name={name}
         id={name}
-        className="text-input"
+        className={classArr.join(' ')}
       />
     </div>
   );
