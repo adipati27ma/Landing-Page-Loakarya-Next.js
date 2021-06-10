@@ -217,12 +217,14 @@ export default function Home(props) {
                 <h2 className="home-section-title">Artikel Terbaru</h2>
                 <ArticleList profileArticles={profileArticles} />
                 <Link href="/articles">
-                  <div className="see-more-articles">
-                    <div className="see-more-articles-link">
-                      <span>Lihat artikel lainnya</span>
-                      <NextIcon />
+                  <a className="see-more-articles-link">
+                    <div className="see-more-articles">
+                      <div className="see-more-articles-link">
+                        <span>Lihat artikel lainnya</span>
+                        <NextIcon />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </Link>
               </article>
             </section>

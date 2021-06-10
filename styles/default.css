@@ -628,6 +628,11 @@ hr.border {
   margin-bottom: 4.5rem;
 }
 
+#content.home-content .content .article-list-section a.see-more-articles-link {
+  color: #3e61dc;
+  text-decoration: none;
+}
+
 #content.home-content .content .article-list-section .see-more-articles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,8 +642,6 @@ hr.border {
           justify-content: center;
   margin-top: 4em;
   cursor: pointer;
-  color: #3e61dc;
-  text-decoration: none;
 }
 
 #content.home-content .content .article-list-section .see-more-articles .see-more-articles-link {
@@ -2157,6 +2160,10 @@ header ul li a .MuiButtonBase-root img.search-icon {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: .3rem;
+}
+
+.article-list-container .article-list-item > a {
+  text-decoration: none;
 }
 
 .article-list-container .article-list-item:hover {

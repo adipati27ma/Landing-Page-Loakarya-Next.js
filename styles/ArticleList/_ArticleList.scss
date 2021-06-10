@@ -1,6 +1,9 @@
 .article-list-container {
 
   .article-list-item {
+    >a {
+      text-decoration: none;
+    }
 
     &:hover {
       cursor: pointer;

@@ -20,24 +20,33 @@ export default function ArticleList({ profileArticles }) {
         // console.log(articleData);
 
         return (
-          <Link href={`/article/${article.slug}`} key={article.id}>
-            <Grid item xs={12} sm={6} md={4} className="article-list-item">
-              <img
-                src={article.thumbnail}
-                alt=""
-                title=""
-                className="article-image"
-              />
-              <div className="article-content">
-                <span className="category">Recycle</span>
-                <h3 className="article-title">{article.title}</h3>
-                <p className="article-text">{article.content}</p>
-                <p className="writer-and-time">
-                  Oleh <span>Admin</span> - 22 April 2021
-                </p>
-              </div>
-            </Grid>
-          </Link>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            className="article-list-item"
+            key={article.id}
+          >
+            <Link href={`/article/${article.slug}`}>
+              <a>
+                <img
+                  src={article.thumbnail}
+                  alt=""
+                  title=""
+                  className="article-image"
+                />
+                <div className="article-content">
+                  <span className="category">Recycle</span>
+                  <h3 className="article-title">{article.title}</h3>
+                  <p className="article-text">{article.content}</p>
+                  <p className="writer-and-time">
+                    Oleh <span>Admin</span> - 22 April 2021
+                  </p>
+                </div>
+              </a>
+            </Link>
+          </Grid>
         );
       })}
     </Grid>
