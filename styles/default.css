@@ -2670,4 +2670,13 @@ header ul li a .MuiButtonBase-root img.search-icon {
             align-items: flex-start;
   }
 }
+
+@media all and (max-height: 480px) {
+  .login-modal-backdrop {
+    overflow: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 /*# sourceMappingURL=default.css.map */

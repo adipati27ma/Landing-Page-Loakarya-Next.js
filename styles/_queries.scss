@@ -363,9 +363,16 @@
   }
 }
 
-// For Regist Modal can Scroll
+// For Regist & Login Modal Popup can Scroll
 @media all and (max-height: 780px) {
   .register-modal-backdrop {
+    overflow: auto;
+    align-items: flex-start;
+  }
+}
+
+@media all and (max-height: 480px) {
+  .login-modal-backdrop {
     overflow: auto;
     align-items: flex-start;
   }
