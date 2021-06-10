@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Head from "next/head";
+import React, { Component } from 'react';
+import Head from 'next/head';
 
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Card from "../../components/Card/Card";
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import Card from '../../components/Card/Card';
 
 class About extends Component {
   render() {
@@ -53,24 +53,28 @@ class About extends Component {
             </p>
           </div>
 
-          {/* <div className="width--large compro-section font-color-secondary">
+          <div className="width--large compro-section font-color-secondary">
             <p>
               <b>
-                “We escalate the value of waste material by upcycling and
-                repurposing for eco living.”
+                <i>
+                  “We escalate the value of waste material by upcycling and
+                  repurposing for eco living.”
+                </i>
               </b>
             </p>
-          </div> */}
+          </div>
 
           <div className="width--large compro-section">
             <h1 className="font-color-primary">Visi dan Misi</h1>
             <p>
-              Visi kami adalah membantu Indonesia menekan pertambahan sampah
-              sebesar 70% di tahun 2025.
+              Visi kami adalah menghadirkan kreasi terbaik bagi masyarakat,
+              memberdayakan komunitas lokal, dan mengurangi sampah sebanyak
+              mungkin untuk menciptakan gaya hidup berkelanjutan.
             </p>
             <p>
-              Misi kami adalah sebagai startup yang menyediakan solusi mudah dan
-              menyenangkan bagi permasalahan limbah di masyarakat.
+              Misi kami adalah menyediakan Kreasi Berkelanjutan yang mendukung
+              aktivitas <i>home-living</i>, komunitas lokal, dan kelestarian
+              lingkungan.
             </p>
           </div>
 

@@ -76,15 +76,15 @@ export default function Card() {
     //     name: 'Mirrah Fairuzsilmi Aliah',
     //     position: 'Social Media Specialist'
     // }
-    {
-      id: 9,
-      src: '/images/team-kami/dummy.jpg',
-      name: 'Syahrul Hidayat',
-      position: 'Operation Specialist',
-      socmed: {
-        linkedin: 'https://www.linkedin.com/in/syahrul-hidayat-916371171/',
-      },
-    },
+    // {
+    //   id: 9,
+    //   src: '/images/team-kami/dummy.jpg',
+    //   name: 'Syahrul Hidayat',
+    //   position: 'Operation Specialist',
+    //   socmed: {
+    //     linkedin: 'https://www.linkedin.com/in/syahrul-hidayat-916371171/',
+    //   },
+    // },
     {
       id: 10,
       src: '/images/team-kami/sami.jpg',
