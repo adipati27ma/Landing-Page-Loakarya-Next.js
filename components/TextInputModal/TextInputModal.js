@@ -10,7 +10,7 @@ export default function TextInputModal(props) {
 
   return (
     <div className="text-input-modal-container">
-      <label for="name" className="text-input-label">
+      <label htmlFor={name} className="text-input-label">
         {label}
       </label>
       <input
@@ -25,7 +25,9 @@ export default function TextInputModal(props) {
 }
 
 TextInputModal.propTypes = {
-  label: PropTypes.text,
-  name: PropTypes.text,
+  label: PropTypes.string,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  classNames: PropTypes.string,
   required: PropTypes.bool,
 };

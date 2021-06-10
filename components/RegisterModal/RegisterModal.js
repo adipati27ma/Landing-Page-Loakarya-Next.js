@@ -32,7 +32,7 @@ export default function RegisterModal(props) {
           className="close-icon"
           onClick={() => setRegistOpen(false)}
         /> */}
-        <div className="form-header">
+        <div className="register-form-header">
           <h4>Registrasi</h4>
           <p className="subtitle">
             Bergabung bersama kami dan dapatkan potongan harga serta garansi
@@ -76,7 +76,11 @@ export default function RegisterModal(props) {
             name="placeOfOrigin"
             required
           />
-          <Button text="Daftar" classNames="btn-can-hover-green block-button" />
+          <Button
+            type="submit"
+            text="Daftar"
+            classNames="btn-can-hover-green block-button"
+          />
           <p>
             Sudah punya akun?&nbsp;{' '}
             <a

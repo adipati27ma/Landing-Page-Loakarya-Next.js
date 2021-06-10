@@ -308,6 +308,32 @@
       }
     }
   }
+
+  // For Login + Regist Modal
+  .login-modal-backdrop,
+  .register-modal-backdrop {
+    .modal-content {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+
+  .register-modal-backdrop {
+    .modal-content {
+      margin: auto 1rem;
+
+      .register-form-header {
+        width: 100%;
+      }
+    }
+  }
+
+  // For TextInputModals
+  .text-input-modal-container {
+    input {
+      width: 250px;
+    }
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -318,6 +344,30 @@
         width: 300px !important;
       }
     }
+  }
+
+  // For Login + Regist Modal
+  .login-modal-backdrop,
+  .register-modal-backdrop {
+    .modal-content {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
+    }
+  }
+
+  // For TextInputModals
+  .text-input-modal-container {
+    input {
+      width: 200px;
+    }
+  }
+}
+
+// For Regist Modal can Scroll
+@media all and (max-height: 780px) {
+  .register-modal-backdrop {
+    overflow: auto;
+    align-items: flex-start;
   }
 }
 

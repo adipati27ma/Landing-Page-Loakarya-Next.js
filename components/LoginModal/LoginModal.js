@@ -38,7 +38,11 @@ export default function LoginModal(props) {
             name="password"
             required
           />
-          <Button text="Masuk" classNames="btn-can-hover-blue block-button" />
+          <Button
+            type="submit"
+            text="Masuk"
+            classNames="btn-can-hover-blue block-button"
+          />
           <span className="or-word">atau</span>
           <img
             src="/images/icon/button-signin-google.svg"

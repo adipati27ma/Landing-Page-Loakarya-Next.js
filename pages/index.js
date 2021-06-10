@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 
@@ -71,6 +71,14 @@ export default function Home(props) {
   const { profileProduct, profileArticles } = props;
   const [loginOpen, setLoginOpen] = useState(false);
   const [registOpen, setRegistOpen] = useState(false);
+
+  useEffect(() => {
+    if (loginOpen || registOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [registOpen, loginOpen]);
 
   return (
     <>

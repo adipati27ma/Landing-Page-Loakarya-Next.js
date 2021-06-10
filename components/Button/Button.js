@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Button as MuiButton, Link } from '@material-ui/core';
 
 function BaseButton(props) {
-  const { text, endIcon, onClick, classNames } = props;
+  const { text, endIcon, type, onClick, classNames } = props;
 
   return (
     <MuiButton
@@ -13,6 +13,7 @@ function BaseButton(props) {
       className={classNames}
       endIcon={endIcon}
       onClick={onClick}
+      type={type || 'button'}
     >
       {text}
     </MuiButton>
@@ -20,7 +21,7 @@ function BaseButton(props) {
 }
 
 function Button(props) {
-  const { text, link, endIcon, onClick, classNames } = props;
+  const { text, link, endIcon, type, onClick, classNames } = props;
   const classArr = ['button'];
   classArr.push(classNames);
 
@@ -32,6 +33,7 @@ function Button(props) {
           classNames={classArr.join(' ')}
           endIcon={endIcon}
           onClick={onClick}
+          type={type}
         />
       </a>
     );
@@ -43,15 +45,17 @@ function Button(props) {
       classNames={classArr.join(' ')}
       endIcon={endIcon}
       onClick={onClick}
+      type={type}
     />
   );
 }
 
 Button.propTypes = {
   text: PropTypes.string,
-  namaClass: PropTypes.string,
+  classNames: PropTypes.string,
   link: PropTypes.string,
   endIcon: PropTypes.object,
+  type: PropTypes.string,
   onClick: PropTypes.func,
 };
 

@@ -2279,6 +2279,16 @@ header ul li a .MuiButtonBase-root img.search-icon {
   padding: 62px 5rem 1.5rem;
   text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .login-modal-backdrop .modal-content .close-icon {
@@ -2367,6 +2377,16 @@ header ul li a .MuiButtonBase-root img.search-icon {
   padding: 32px 5rem 2rem;
   text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .register-modal-backdrop .modal-content .close-icon {
@@ -2384,11 +2404,12 @@ header ul li a .MuiButtonBase-root img.search-icon {
   color: red;
 }
 
-.register-modal-backdrop .modal-content .form-header {
+.register-modal-backdrop .modal-content .register-form-header {
   width: 300px;
+  margin-right: auto;
 }
 
-.register-modal-backdrop .modal-content .form-header h4 {
+.register-modal-backdrop .modal-content .register-form-header h4 {
   color: #110A04;
   font-size: 1.33rem;
   font-weight: 600;
@@ -2396,7 +2417,7 @@ header ul li a .MuiButtonBase-root img.search-icon {
   margin-bottom: 5px;
 }
 
-.register-modal-backdrop .modal-content .form-header p.subtitle {
+.register-modal-backdrop .modal-content .register-form-header p.subtitle {
   margin-bottom: 1.75rem;
   font-size: 11px;
   font-weight: 500;
@@ -2610,12 +2631,43 @@ header ul li a .MuiButtonBase-root img.search-icon {
   #content.home-content .content .why-content-section .why-content p {
     width: auto;
   }
+  .login-modal-backdrop .modal-content,
+  .register-modal-backdrop .modal-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .register-modal-backdrop .modal-content {
+    margin: auto 1rem;
+  }
+  .register-modal-backdrop .modal-content .register-form-header {
+    width: 100%;
+  }
+  .text-input-modal-container input {
+    width: 250px;
+  }
 }
 
 @media all and (max-width: 400px) {
   .testimoni-slider-container .swiper-container .swiper-slide {
     margin-bottom: 5em;
     width: 300px !important;
+  }
+  .login-modal-backdrop .modal-content,
+  .register-modal-backdrop .modal-content {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+  .text-input-modal-container input {
+    width: 200px;
+  }
+}
+
+@media all and (max-height: 780px) {
+  .register-modal-backdrop {
+    overflow: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 /*# sourceMappingURL=default.css.map */
