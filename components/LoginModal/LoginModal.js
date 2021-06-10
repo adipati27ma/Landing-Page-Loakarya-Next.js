@@ -6,6 +6,18 @@ import CloseIcon from '@material-ui/icons/Close';
 import TextInputModal from '../TextInputModal/TextInputModal';
 import Button from '../Button/Button';
 
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
 export default function LoginModal(props) {
   const { setLoginOpen, setRegistOpen } = props;
 
@@ -19,7 +31,14 @@ export default function LoginModal(props) {
   };
 
   return (
-    <div className="login-modal-backdrop" onClick={handleCloseOnClick}>
+    <motion.div
+      className="login-modal-backdrop"
+      onClick={handleCloseOnClick}
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+    >
       <div className="modal-content">
         <CloseIcon className="close-icon" onClick={() => setLoginOpen(false)} />
         {/* <img
@@ -65,7 +84,7 @@ export default function LoginModal(props) {
           </p>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

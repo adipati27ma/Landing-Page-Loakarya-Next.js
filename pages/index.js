@@ -17,6 +17,8 @@ import ArticleList from '../components/ArticleList/ArticleList';
 import LoginModal from '../components/LoginModal/LoginModal';
 import RegisterModal from '../components/RegisterModal/RegisterModal';
 
+import { AnimatePresence } from 'framer-motion';
+
 const numbers = [
   {
     id: 1,
@@ -71,6 +73,8 @@ export default function Home(props) {
   const { profileProduct, profileArticles } = props;
   const [loginOpen, setLoginOpen] = useState(false);
   const [registOpen, setRegistOpen] = useState(false);
+
+  console.log(loginOpen, registOpen);
 
   useEffect(() => {
     if (loginOpen || registOpen) {
@@ -231,15 +235,22 @@ export default function Home(props) {
         <Footer className="footer-home" homeFooter />
       </div>
 
-      {loginOpen && (
-        <LoginModal setLoginOpen={setLoginOpen} setRegistOpen={setRegistOpen} />
-      )}
-      {registOpen && (
-        <RegisterModal
-          setRegistOpen={setRegistOpen}
-          setLoginOpen={setLoginOpen}
-        />
-      )}
+      <AnimatePresence>
+        {loginOpen && (
+          <LoginModal
+            setLoginOpen={setLoginOpen}
+            setRegistOpen={setRegistOpen}
+          />
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {registOpen && (
+          <RegisterModal
+            setRegistOpen={setRegistOpen}
+            setLoginOpen={setLoginOpen}
+          />
+        )}
+      </AnimatePresence>
     </>
   );
 }
