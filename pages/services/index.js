@@ -146,6 +146,7 @@ export default function Services() {
                       text="Mulai Sekarang Juga!"
                       classNames="btn-can-hover-green"
                       link="https://form.typeform.com/to/c6DBijku"
+                      target="blank"
                     />
                     {/* <a
                       target="blank"

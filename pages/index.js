@@ -74,8 +74,6 @@ export default function Home(props) {
   const [loginOpen, setLoginOpen] = useState(false);
   const [registOpen, setRegistOpen] = useState(false);
 
-  console.log(loginOpen, registOpen);
-
   useEffect(() => {
     if (loginOpen || registOpen) {
       document.body.style.overflow = 'hidden';
@@ -232,7 +230,11 @@ export default function Home(props) {
             <div className="blue-border-home"></div>
           </div>
         </main>
-        <Footer className="footer-home" homeFooter />
+        <Footer
+          className="footer-home"
+          homeFooter
+          setRegistOpen={setRegistOpen}
+        />
       </div>
 
       <AnimatePresence>

@@ -52,13 +52,13 @@ export default function HeroHome(props) {
                 text="Beli produk"
                 classNames="btn-can-hover-green"
                 endIcon={<NextIcon />}
-                link="https://www.google.com"
+                link="/products"
               />
               <Button
                 text="Kreasikan ruanganmu"
                 classNames="btn-can-hover-green"
                 endIcon={<NextIcon />}
-                link="https://www.facebook.com"
+                link="/services"
               />
             </div>
             <Link href="/contact">

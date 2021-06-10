@@ -18,6 +18,17 @@ const containerVariants = {
   },
 };
 
+const contentVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.1,
+      delay: 0.2,
+    },
+  },
+};
+
 export default function LoginModal(props) {
   const { setLoginOpen, setRegistOpen } = props;
 
@@ -39,7 +50,13 @@ export default function LoginModal(props) {
       animate="visible"
       exit="hidden"
     >
-      <div className="modal-content">
+      <motion.div
+        className="modal-content"
+        variants={contentVariants}
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+      >
         <CloseIcon className="close-icon" onClick={() => setLoginOpen(false)} />
         {/* <img
           src="/images/icon/close-icon.svg"
@@ -76,14 +93,14 @@ export default function LoginModal(props) {
               onClick={() => {
                 setTimeout(() => {
                   setRegistOpen(true);
-                }, 200);
+                }, 500);
               }}
             >
               Daftar
             </a>
           </p>
         </form>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

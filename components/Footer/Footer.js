@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 // import './Footer.css';
 
@@ -7,7 +8,7 @@ import NextIcon from '@material-ui/icons/NavigateNext';
 
 import Button from '../Button/Button';
 
-const Footer = ({ homeFooter }) => {
+const Footer = ({ homeFooter, setRegistOpen }) => {
   if (homeFooter) {
     return (
       <footer>
@@ -18,8 +19,8 @@ const Footer = ({ homeFooter }) => {
             <Button
               text="Daftar"
               endIcon={<NextIcon />}
-              link="#"
               classNames="btn-can-hover-green"
+              onClick={() => setRegistOpen(true)}
             />
           </div>
         </div>
@@ -222,3 +223,8 @@ const Footer = ({ homeFooter }) => {
   );
 };
 export default Footer;
+
+Footer.propTypes = {
+  homeFooter: PropTypes.bool,
+  setRegistOpen: PropTypes.func,
+};

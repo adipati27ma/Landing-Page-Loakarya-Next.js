@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// import Link from 'next/link';
-import { Button as MuiButton, Link } from '@material-ui/core';
+import Link from 'next/link';
+import { Button as MuiButton } from '@material-ui/core';
 
 function BaseButton(props) {
   const { text, endIcon, type, onClick, classNames } = props;
@@ -21,21 +21,23 @@ function BaseButton(props) {
 }
 
 function Button(props) {
-  const { text, link, endIcon, type, onClick, classNames } = props;
+  const { text, link, endIcon, type, target, onClick, classNames } = props;
   const classArr = ['button'];
   classArr.push(classNames);
 
   if (link) {
     return (
-      <a target="blank" href={link} style={{ textDecoration: 'none' }}>
-        <BaseButton
-          text={text}
-          classNames={classArr.join(' ')}
-          endIcon={endIcon}
-          onClick={onClick}
-          type={type}
-        />
-      </a>
+      <Link href={link}>
+        <a target={target || ''} style={{ textDecoration: 'none' }}>
+          <BaseButton
+            text={text}
+            classNames={classArr.join(' ')}
+            endIcon={endIcon}
+            onClick={onClick}
+            type={type}
+          />
+        </a>
+      </Link>
     );
   }
 
@@ -56,6 +58,7 @@ Button.propTypes = {
   link: PropTypes.string,
   endIcon: PropTypes.object,
   type: PropTypes.string,
+  target: PropTypes.string,
   onClick: PropTypes.func,
 };
 
