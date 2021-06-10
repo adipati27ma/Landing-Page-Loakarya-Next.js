@@ -2424,6 +2424,14 @@ header ul li a .MuiButtonBase-root img.search-icon {
   text-align: left;
 }
 
+.register-modal-backdrop .modal-content .text-input-modal-container {
+  margin-bottom: 1.475rem;
+}
+
+.register-modal-backdrop .modal-content .button.MuiButton-root {
+  margin-top: 4.1em;
+}
+
 .register-modal-backdrop .modal-content form p {
   display: block;
   margin-top: 1.1em;
