@@ -15,6 +15,7 @@ import CoBussiness from '../components/CoBussiness/CoBussiness';
 import TestimonialSlider from '../components/TestimonialSlider/TestimonialSlider';
 import ArticleList from '../components/ArticleList/ArticleList';
 import LoginModal from '../components/LoginModal/LoginModal';
+import RegisterModal from '../components/RegisterModal/RegisterModal';
 
 const numbers = [
   {
@@ -222,7 +223,15 @@ export default function Home(props) {
         <Footer className="footer-home" homeFooter />
       </div>
 
-      {loginOpen && <LoginModal setLoginOpen={setLoginOpen} />}
+      {loginOpen && (
+        <LoginModal setLoginOpen={setLoginOpen} setRegistOpen={setRegistOpen} />
+      )}
+      {registOpen && (
+        <RegisterModal
+          setRegistOpen={setRegistOpen}
+          setLoginOpen={setLoginOpen}
+        />
+      )}
     </>
   );
 }

@@ -2218,6 +2218,40 @@ header ul li a .MuiButtonBase-root img.search-icon {
   font-weight: bold;
 }
 
+.text-input-modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2.6rem;
+}
+
+.text-input-modal-container label {
+  color: #666666;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.text-input-modal-container input {
+  width: 300px;
+  margin-top: .85rem;
+  border: 1px solid #110A04;
+  padding: .45em .5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #3e61dc;
+  line-height: 1.5;
+}
+
+.text-input-modal-container input.password-input {
+  font-weight: bold;
+}
+
 .login-modal-backdrop {
   position: fixed;
   top: 0;
@@ -2267,6 +2301,7 @@ header ul li a .MuiButtonBase-root img.search-icon {
   color: #110A04;
   font-size: 1.33rem;
   font-weight: 600;
+  text-align: left;
 }
 
 .login-modal-backdrop .modal-content span.or-word {
@@ -2298,44 +2333,91 @@ header ul li a .MuiButtonBase-root img.search-icon {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .login-modal-backdrop .modal-content p a.link-register:hover {
   text-decoration: underline;
 }
 
-.text-input-modal-container {
+.register-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(112, 112, 112, 0.37);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 2.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.text-input-modal-container label {
-  color: #666666;
-  font-size: 1rem;
+.register-modal-backdrop .modal-content {
+  background-color: white;
+  border-radius: 7px;
+  padding: 32px 5rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.register-modal-backdrop .modal-content .close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 12px;
+  margin-right: 19px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.register-modal-backdrop .modal-content .close-icon:hover {
+  color: red;
+}
+
+.register-modal-backdrop .modal-content .form-header {
+  width: 300px;
+}
+
+.register-modal-backdrop .modal-content .form-header h4 {
+  color: #110A04;
+  font-size: 1.33rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.register-modal-backdrop .modal-content .form-header p.subtitle {
+  margin-bottom: 1.75rem;
+  font-size: 11px;
   font-weight: 500;
-  line-height: 1.5;
   text-align: left;
 }
 
-.text-input-modal-container input {
-  width: 300px;
-  margin-top: .85rem;
-  border: 1px solid #110A04;
-  padding: .45em .5em;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
-  color: #3e61dc;
-  line-height: 1.5;
+.register-modal-backdrop .modal-content form p {
+  display: block;
+  margin-top: 1.1em;
 }
 
-.text-input-modal-container input.password-input {
-  font-weight: bold;
+.register-modal-backdrop .modal-content form p a.link-login {
+  color: #3e61dc;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.register-modal-backdrop .modal-content form p a.link-login:hover {
+  text-decoration: underline;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {

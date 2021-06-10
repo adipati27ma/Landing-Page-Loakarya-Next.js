@@ -7,10 +7,13 @@ import TextInputModal from '../TextInputModal/TextInputModal';
 import Button from '../Button/Button';
 
 export default function LoginModal(props) {
-  const { setLoginOpen } = props;
+  const { setLoginOpen, setRegistOpen } = props;
 
   const handleCloseOnClick = (e) => {
-    if (e.target.classList.contains('login-modal-backdrop')) {
+    if (
+      e.target.classList.contains('login-modal-backdrop') ||
+      e.target.classList.contains('link-register')
+    ) {
       setLoginOpen(false);
     }
   };
@@ -45,7 +48,14 @@ export default function LoginModal(props) {
           />
           <p>
             Belum punya akun?&nbsp;{' '}
-            <a href="#" className="link-register">
+            <a
+              className="link-register"
+              onClick={() => {
+                setTimeout(() => {
+                  setRegistOpen(true);
+                }, 200);
+              }}
+            >
               Daftar
             </a>
           </p>
@@ -57,4 +67,5 @@ export default function LoginModal(props) {
 
 LoginModal.propTypes = {
   setLoginOpen: PropTypes.func,
+  setRegistOpen: PropTypes.func,
 };
