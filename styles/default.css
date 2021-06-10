@@ -2489,6 +2489,9 @@ header ul li a .MuiButtonBase-root img.search-icon {
   #content.home-content .content .why-content-section > img {
     width: 90%;
   }
+  .mari-berkreasi-container .mari-berkreasi > h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media all and (min-width: 300px) and (max-width: 768px) {
@@ -2624,6 +2627,12 @@ header ul li a .MuiButtonBase-root img.search-icon {
   #content.home-content .content .why-content-section > img {
     width: 100%;
   }
+  .mari-berkreasi-container .mari-berkreasi {
+    padding: 2.5em 4em;
+  }
+  .mari-berkreasi-container .mari-berkreasi > h2 {
+    font-size: 2rem;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -2660,6 +2669,12 @@ header ul li a .MuiButtonBase-root img.search-icon {
   .text-input-modal-container input {
     width: 250px;
   }
+  .mari-berkreasi-container .mari-berkreasi {
+    padding: 3em 6em;
+  }
+  .mari-berkreasi-container .mari-berkreasi > h2 {
+    font-size: 2rem;
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -2674,6 +2689,15 @@ header ul li a .MuiButtonBase-root img.search-icon {
   }
   .text-input-modal-container input {
     width: 200px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .mari-berkreasi-container .mari-berkreasi {
+    padding: 3em 4em;
+  }
+  .mari-berkreasi-container .mari-berkreasi > h2 {
+    font-size: 2rem;
   }
 }
 

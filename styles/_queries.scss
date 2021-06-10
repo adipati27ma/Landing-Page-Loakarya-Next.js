@@ -64,6 +64,15 @@
       }
     }
   }
+
+  // For footer
+  .mari-berkreasi-container {
+    .mari-berkreasi {
+      >h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
 }
 
 @media all and (min-width: 300px) and (max-width: 768px) {
@@ -262,6 +271,17 @@
       }
     }
   }
+
+  // For footer
+  .mari-berkreasi-container {
+    .mari-berkreasi {
+      padding: 2.5em 4em;
+
+      >h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -334,6 +354,17 @@
       width: 250px;
     }
   }
+
+  // For footer
+  .mari-berkreasi-container {
+    .mari-berkreasi {
+      padding: 3em 6em;
+
+      >h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -359,6 +390,20 @@
   .text-input-modal-container {
     input {
       width: 200px;
+    }
+  }
+}
+
+@media all and (max-width: 380px) {
+
+  // For footer
+  .mari-berkreasi-container {
+    .mari-berkreasi {
+      padding: 3em 4em;
+
+      >h2 {
+        font-size: 2rem;
+      }
     }
   }
 }
