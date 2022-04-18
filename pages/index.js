@@ -120,8 +120,8 @@ export default function Home(props) {
               <CoBussiness />
             </section>
 
-            <section>
-              <div className="block-show">
+            <section className="loka-features-section">
+              <div className="loka-features">
                 <img src="/images/Loakarya-png.png" alt="logo loakarya png" />
               </div>
             </section>
